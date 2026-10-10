@@ -32,7 +32,7 @@ Open `index.html` in a browser, or use the VS Code Live Server extension.
 | Data and identification logic lead 
 | Frontend layout lead 
 | UI/UX and gallery lead 
-| Research and content lead
+| Research and content lead | Olugbodi Akinwole Ogunsheye Wray |
 | Integration and QA lead / Scrum Master
 
 ## Contributing
