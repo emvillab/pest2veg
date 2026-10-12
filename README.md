@@ -1,8 +1,8 @@
-# Pestech
+# Pest2Veg
 
 A responsive, accessible pest information website with a crop and symptom guide for growers.
 
-**Pestech is a UK-focused web application designed to help farmers, vegetable growers and allotment holders** identify common crop pests and narrow down **possible matches** by choosing a crop and the symptoms they see. It is not AI image recognition and not a diagnosis, so users should always verify with an authoritative source.
+**Pest2Veg is a UK-focused web application designed to help farmers, vegetable growers and allotment holders** identify common crop pests and narrow down **possible matches** by choosing a crop and the symptoms they see. It is not AI image recognition and not a diagnosis, so users should always verify with an authoritative source.
 
 **Module:** CPU4106-20C Group Project | **SDG:** 2 Zero Hunger
 
