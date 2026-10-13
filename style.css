@@ -1,0 +1,125 @@
+/* ---------- GLOBAL ---------- */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f9f6;
+    color: #222;
+}
+
+
+/* ---------- HEADER ---------- */
+
+header {
+    background-color: #ffffff;
+}
+
+header > img {
+    width: 180px;
+    height: auto;
+}
+
+
+/* ---------- HOMEPAGE HERO ---------- */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #063d24;
+    color: white;
+    padding: 35px 8%;
+    min-height: 300px;
+}
+
+
+/* Left side */
+
+.hero-content {
+    flex: 1;
+    max-width: 550px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    line-height: 1.1;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 span {
+    color: #7ac943;
+}
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+
+/* Right side */
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 550px;
+    height: auto;
+    max-width: 100%;
+}
+
+
+/* ---------- HERO BUTTONS ---------- */
+
+.btn {
+    display: inline-block;
+    padding: 12px 22px;
+    margin-right: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.btn-primary {
+    background-color: #7ac943;
+    color: white;
+}
+
+.btn-secondary {
+    border: 2px solid white;
+    color: white;
+}
+
+header {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 8%;
+    background-color: #ffffff;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #222;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 0;
+}
+
+nav a:hover {
+    color: #2e8b3c;
+}
+
+nav a.active {
+    color: #2e8b3c;
+    border-bottom: 3px solid #7ac943;
+}
