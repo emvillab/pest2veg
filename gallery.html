@@ -14,56 +14,192 @@
         <a href="index.html">Home</a>
         <a class="active" href="gallery.html">Pest Gallery</a>
         <a href="identify.html">Identify a Pest</a>
+        <a href="resources.html">Resources</a>
         <a href="about.html">About</a>
       </nav>
     </header>
     <main>
       <section>
         <h1>Pest Gallery</h1>
-        <p>Explore common pests that affect vegetables and crops across the UK.</p>
+        <p class="page-intro">Explore common pests, view images and learn how to identify and manage them.</p>
+        <div class="gallery-filters">
+          <div class="filter-group">
+            <label for="pest-search">Search pests</label>
+            <input type="search" id="pest-search" placeholder="Search by pest name...">
+          </div>
+          <div class="filter-group">
+            <label for="crop-filter">Filter by crop</label>
+            <select id="crop-filter">
+              <option value="all">All crops</option>
+              <option value="tomato">Tomato</option>
+              <option value="cabbage">Cabbage</option>
+              <option value="potato">Potato</option>
+              <option value="lettuce">Lettuce</option>
+              <option value="pepper">Pepper</option>
+              <option value="cucumber">Cucumber</option>
+              <option value="strawberry">Strawberry</option>
+              <option value="spinach">Spinach</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="type-filter">Filter by pest type</label>
+            <select id="type-filter">
+              <option value="all">All pest types</option>
+              <option value="insect">Insect</option>
+              <option value="mite">Mite</option>
+              <option value="mollusc">Mollusc</option>
+              <option value="nematode">Nematode</option>
+            </select>
+          </div>
+        </div>
+        <p class="results-count">
+          <strong>12</strong> pests found</p>
       </section>
       <section>
         <h2>Common UK Crop Pests</h2>
         <div class="pest-grid">
           <article class="pest-card">
-            <h3>Aphids</h3>
-            <p>Small sap-sucking insects that can damage a range of crops.</p>
-            <a href="pest-details.html">Learn More</a>
+            <div class="pest-image">
+              <img src="assets/pests/photos/aphids.jpg" alt="Aphids on a plant">
+            </div>
+            <div class="pest-card-content">
+              <h3>Aphids</h3>
+              <p class="pest-type">Insect</p>
+              <p>Affects: Tomato, Lettuce, Pepper, Cucumber, Strawberry</p>
+              <a href="pest-details.html">View Pest Details</a>
+            </div>
           </article>
+
           <article class="pest-card">
-            <h3>Whiteflies</h3>
-            <p>Small winged insects that feed on plant sap and gather on the undersides of leaves.</p>
-            <a href="pest-details.html">Learn More</a>
+            <div class="pest-image">
+              <img src="assets/pests/photos/mealy-cabbage-aphid.jpg">
+            </div>
+            <div class="pest-card-content">
+              <h3>Mealy Cabbage Aphid</h3>
+              <p class="pest-type">Insect</p>
+              <p>Affects: Cabbage</p>
+              <a href="pest-details.html">View Pest Details</a>
+            </div>
           </article>
+
           <article class="pest-card">
-            <h3>Caterpillars</h3>
-            <p>Leaf-feeding larvae that can cause visible holes and damage to crops.</p>
-            <a href="pest-details.html">Learn More</a>
+            <div class="pest-image">
+              <img src="assets/pests/photos/glasshouse-whitefly.jpg">
+            </div>
+            <div class="pest-card-content">
+              <h3>Glasshouse Whitefly</h3>
+              <p class="pest-type">Insect</p>
+              <p>Affects: Tomato, Pepper, Cucumber</p>
+              <a href="pest-details.html">View Pest Details</a>
+            </div>
           </article>
+
           <article class="pest-card">
-            <h3>Spider Mites</h3>
-            <p>Tiny plant-feeding mites that can cause discolouration and damage to leaves.</p>
-            <a href="pest-details.html">Learn More</a>
+            <div class="pest-image">
+              <img src="assets/pests/photos/cabbage-caterpillars.jpg">
+            </div>
+            <div class="pest-card-content">
+              <h3>Cabbage Caterpillars</h3>
+              <p class="pest-type">Insect</p>
+              <p>Affects: Cabbage</p>
+              <a href="pest-details.html">View Pest Details</a>
+            </div>
           </article>
+
           <article class="pest-card">
-            <h3>Thrips</h3>
-            <p>Small insects that feed on plant tissue and can damage leaves, flowers and developing crops.</p>
-            <a href="pest-details.html">Learn More</a>
+            <div class="pest-image">
+              <img src="assets/pests/photos/cabbage-root-fly.jpg">
+            </div>
+            <div class="pest-card-content">
+              <h3>Cabbage Root Fly</h3>
+              <p class="pest-type">Insect</p>
+              <p>Affects: Cabbage</p>
+              <a href="pest-details.html">View Pest Details</a>
+            </div>
           </article>
+
           <article class="pest-card">
-            <h3>Leaf Miners</h3>
-            <p>Insect larvae that feed within leaves, leaving distinctive trails or patches of damage.</p>
-            <a href="pest-details.html">Learn More</a>
+            <div class="pest-image">
+              <img src="assets/pests/photos/red-spider-mite.jpg">
+            </div>
+            <div class="pest-card-content">
+              <h3>Red Spider Mite</h3>
+              <p class="pest-type">Mite</p>
+              <p>Affects: Tomato, Pepper, Cucumber</p>
+              <a href="pest-details.html">View Pest Details</a>
+            </div>
           </article>
+
           <article class="pest-card">
-            <h3>Slugs and Snails</h3>
-            <p>Common garden pests that feed on leaves and other soft plant material.</p>
-            <a href="pest-details.html">Learn More</a>
+            <div class="pest-image">
+              <img src="assets/pests/photos/thrips.jpg">
+            </div>
+            <div class="pest-card-content">
+              <h3>Thrips</h3>
+              <p class="pest-type">Insect</p>
+              <p>Affects: Tomato, Cucumber</p>
+              <a href="pest-details.html">View Pest Details</a>
+            </div>
           </article>
+
           <article class="pest-card">
-            <h3>Beetles</h3>
-            <p>Plant-feeding beetles that can damage leaves and other parts of vegetable crops.</p>
-            <a href="pest-details.html">Learn More</a>
+            <div class="pest-image">
+              <img src="assets/pests/photos/slugs-and-snails.jpg">
+            </div>
+            <div class="pest-card-content">
+              <h3>Slugs and Snails</h3>
+              <p class="pest-type">Mollusc</p>
+              <p>Affects: Cabbage, Potato, Lettuce, Cucumber, Strawberry, Spinach</p>
+              <a href="pest-details.html">View Pest Details</a>
+            </div>
+          </article>
+
+          <article class="pest-card">
+            <div class="pest-image">
+              <img src="assets/pests/photos/wireworms.jpg">
+            </div>
+            <div class="pest-card-content">
+              <h3>Wireworms</h3>
+              <p class="pest-type">Insect</p>
+              <p>Affects: Potato</p>
+              <a href="pest-details.html">View Pest Details</a>
+            </div>
+          </article>
+
+          <article class="pest-card">
+            <div class="pest-image">
+              <img src="assets/pests/photos/potato-cyst-nematodes.jpg">
+            </div>
+            <div class="pest-card-content">
+              <h3>Potato Cyst Nematodes</h3>
+              <p class="pest-type">Nematode</p>
+              <p>Affects: Potato, Tomato</p>
+              <a href="pest-details.html">View Pest Details</a>
+            </div>
+          </article>
+
+          <article class="pest-card">
+            <div class="pest-image">
+              <img src="assets/pests/photos/vine-weevil.jpg">
+            </div>
+            <div class="pest-card-content">
+              <h3>Vine Weevil</h3>
+              <p class="pest-type">Insect</p>
+              <p>Affects: Strawberry</p>
+              <a href="pest-details.html">View Pest Details</a>
+            </div>
+          </article>
+
+          <article class="pest-card">
+            <div class="pest-image">
+              <img src="assets/pests/photos/cutworms.jpg">
+            </div>
+            <div class="pest-card-content">
+              <h3>Cutworms</h3>
+              <p class="pest-type">Insect</p>
+              <p>Affects: Lettuce, Potato</p>
+              <a href="pest-details.html">View Pest Details</a>
+            </div>
           </article>
         </div>   
       </section>
