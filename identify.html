@@ -23,41 +23,46 @@
         <h1>Identify a Pest</h1>
         <p>Select a crop and the signs of damage you have noticed to find possible pest matches.</p>
       </section>
-      <section>
-        <h2>Select Your Crop</h2>
+      
+      <ol class="identify-steps" aria-label="Identification progress">
+        <li data-step="1">
+          <span class="step-number">1</span>
+          Select Crop
+        </li>
+        
+        <li data-step="2">
+          <span class="step-number">2</span>
+          Choose Symptoms
+        </li>
+        
+        <li data-step="3">
+          <span class="step-number">3</span>
+          View Results
+        </li>
+      </ol>
+
+      <section class="identify-panel">
+        <h2>1. Select Your Crop</h2>
         <p>Choose the crop that is showing signs of pest damage.</p>
-        <label for="crop">Crop:</label>
-        <select id="crop" name="crop">
-          <option value="">Select a crop</option>
-          <option value="tomato">Tomato</option>
-          <option value="cabbage">Cabbage</option>
-          <option value="potato">Potato</option>
-          <option value="lettuce">Lettuce</option>
-          <option value="pepper">Pepper</option>
-          <option value="cucumber">Cucumber</option>
-          <option value="strawberry">Strawberry</option>
-          <option value="spinach">Spinach</option>
-        </select>
-      </section>
-      <section>
-        <h2>Select the Symptoms</h2>
-        <p>Select the signs of damage you have noticed on your crop.</p>
-        <div class="symptom-options">
-          <label>
-            <input type="checkbox" name="symptom" value="holes-in-leaves">Holes in leaves
-          </label>
-          <label>
-            <input type="checkbox" name="symptom" value="curles-leaves">Curled or distorted leaves
-          </label>
-          <label>
-            <input type="checkbox" name="symptom" value="discoloured-leaves">Discoloured leaves
-          </label>
-        </div>
-        <button type="button" id="identity-button">Find Possible Pests</button>
-      </section>
-      <section id="results">
-        <h2>Possible Pest Matches</h2>
-        <p>Your possible pest matches will appear here.</p>
+
+        <div id="crop-options"></div>
+        
+        <section class="identify-panel">
+          <h2>2. Select the Symptoms</h2>
+          <p>Select one or more signs of damage you have noticed on your crop.</p>
+          
+          <div id="symptom-options"></div>
+          
+          <div class="identify-actions">
+            <button type="button" id="find-pests">Find Possible Pests</button>
+            <button type="button" id="reset-identify">Start Again</button>
+          </div>
+        </section>
+        
+      <div id="identify-message" role="alert" hidden></div>
+
+      <section id="results" aria-live="polite" hidden>
+
       </section>
     </main>
     <footer>
