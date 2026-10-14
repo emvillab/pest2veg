@@ -398,3 +398,172 @@ main > section h1 {
     object-fit: cover;
     display:block;
 }
+
+/* PEST DETAILS PAGE */
+
+.pest-details {
+    padding: 40px 8% 60px;
+}
+
+.back-link {
+    display: inline-block;
+    color: #2e8b3c;
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.breadcrumb a {
+    color: #2e8b3c;
+    text-decoration: none;
+}
+
+.pest-details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.pest-details-image img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.pest-details-info h1 {
+    font-size: 42px;
+    color: #163d2b;
+    margin: 15px 0;
+}
+
+.pest-details-info h2 {
+    color: #163d2b;
+    margin-top: 25px;
+}
+
+.pest-details-info p {
+    color: #555;
+    line-height: 1.7;
+}
+
+.pest-info-section {
+    max-width: 1100px;
+    margin: 0 auto 25px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.pest-info-section h2 {
+    color: #163d2b;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.pest-info-section p {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+.key-facts {
+    margin-top: 25px;
+    padding: 20px;
+    background-color: #eef6ec;
+    border-left: 4px solid #7ac943;
+    border-radius: 6px;
+}
+
+.key-facts h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #163d2b;
+}
+
+.key-facts p {
+    margin: 8px 0;
+}
+
+.image-credit {
+    margin-top: 8px;
+    font-size: 12px;
+    color: #777;
+    line-height: 1.4;
+}
+
+.image-credit span {
+    font-style: italic;
+}
+
+/* ---------- RESOURCES PAGE ---------- */
+
+.resources-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    padding-top: 0;
+}
+
+.resource-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.resource-card h2 {
+    color: #163d2b;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.resource-card p {
+    color: #555;
+    line-height: 1.7;
+}
+
+.resource-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #2e8b3c;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.resource-card a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- ABOUT PAGE ---------- */
+
+.about-section {
+    max-width: 1000px;
+    margin: 0 auto 25px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.about-section h2 {
+    color: #163d2b;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.about-section p {
+    color: #555;
+    line-height: 1.7;
+}
