@@ -1,212 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Pest Gallery | Pest2Veg</title>
+
     <link rel="stylesheet" href="style.css">
-    <title>Pest2Veg | Pest Gallery</title>
-    <meta name="description" content="Pest2Veg helps UK growers identify common crop pests and find useful pest information.">
-  </head>
-  <body>
+</head>
+
+<body>
+
     <header>
-      <img src="pest2veg-logo.svg" alt="Pest2Veg">
-      <nav>
-        <a href="index.html">Home</a>
-        <a class="active" href="gallery.html">Pest Gallery</a>
-        <a href="identify.html">Identify a Pest</a>
-        <a href="resources.html">Resources</a>
-        <a href="about.html">About</a>
-      </nav>
+
+        <a href="index.html">
+            <img
+                class="logo"
+                src="assets/pest2veg-logo.svg"
+                alt="Pest2Veg">
+        </a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a class="active" href="gallery.html">Pest Gallery</a>
+            <a href="identify.html">Identify a Pest</a>
+            <a href="about.html">About</a>
+        </nav>
+
     </header>
-    <main>
-      <section>
+
+    <main class="section">
+
         <h1>Pest Gallery</h1>
-        <p class="page-intro">Explore common pests, view images and learn how to identify and manage them.</p>
-        <div class="gallery-filters">
-          <div class="filter-group">
-            <label for="pest-search">Search pests</label>
-            <input type="search" id="pest-search" placeholder="Search by pest name...">
-          </div>
-          <div class="filter-group">
-            <label for="crop-filter">Filter by crop</label>
-            <select id="crop-filter">
-              <option value="all">All crops</option>
-              <option value="tomato">Tomato</option>
-              <option value="cabbage">Cabbage</option>
-              <option value="potato">Potato</option>
-              <option value="lettuce">Lettuce</option>
-              <option value="pepper">Pepper</option>
-              <option value="cucumber">Cucumber</option>
-              <option value="strawberry">Strawberry</option>
-              <option value="spinach">Spinach</option>
-            </select>
-          </div>
-          <div class="filter-group">
-            <label for="type-filter">Filter by pest type</label>
-            <select id="type-filter">
-              <option value="all">All pest types</option>
-              <option value="insect">Insect</option>
-              <option value="mite">Mite</option>
-              <option value="mollusc">Mollusc</option>
-              <option value="nematode">Nematode</option>
-            </select>
-          </div>
+
+        <p>
+            Browse the selected pests used in this Pest2Veg prototype.
+        </p>
+
+        <div class="controls">
+
+            <div class="form-group">
+
+                <label for="search">
+                    Search pests
+                </label>
+
+                <input
+                    id="search"
+                    type="search"
+                    placeholder="e.g. Aphids">
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="crop-filter">
+                    Filter by crop
+                </label>
+
+                <select id="crop-filter"></select>
+
+            </div>
+
+            <strong id="gallery-count"></strong>
+
         </div>
-        <p class="results-count">
-          <strong>12</strong> pests found</p>
-      </section>
-      <section>
-        <h2>Common UK Crop Pests</h2>
-        <div class="pest-grid">
-          <article class="pest-card">
-            <div class="pest-image">
-              <img src="assets/pests/photos/aphids.jpg" alt="Aphids on a plant">
-            </div>
-            <div class="pest-card-content">
-              <h3>Aphids</h3>
-              <p class="pest-type">Insect</p>
-              <p>Affects: Tomato, Lettuce, Pepper, Cucumber, Strawberry</p>
-              <a href="pest-details.html">View Pest Details</a>
-            </div>
-          </article>
 
-          <article class="pest-card">
-            <div class="pest-image">
-              <img src="assets/pests/photos/mealy-cabbage-aphid.jpg">
-            </div>
-            <div class="pest-card-content">
-              <h3>Mealy Cabbage Aphid</h3>
-              <p class="pest-type">Insect</p>
-              <p>Affects: Cabbage</p>
-              <a href="pest-details.html">View Pest Details</a>
-            </div>
-          </article>
+        <div
+            id="pest-grid"
+            class="cards"
+            style="margin-top:25px">
+        </div>
 
-          <article class="pest-card">
-            <div class="pest-image">
-              <img src="assets/pests/photos/glasshouse-whitefly.jpg">
-            </div>
-            <div class="pest-card-content">
-              <h3>Glasshouse Whitefly</h3>
-              <p class="pest-type">Insect</p>
-              <p>Affects: Tomato, Pepper, Cucumber</p>
-              <a href="pest-details.html">View Pest Details</a>
-            </div>
-          </article>
-
-          <article class="pest-card">
-            <div class="pest-image">
-              <img src="assets/pests/photos/cabbage-caterpillars.jpg">
-            </div>
-            <div class="pest-card-content">
-              <h3>Cabbage Caterpillars</h3>
-              <p class="pest-type">Insect</p>
-              <p>Affects: Cabbage</p>
-              <a href="pest-details.html">View Pest Details</a>
-            </div>
-          </article>
-
-          <article class="pest-card">
-            <div class="pest-image">
-              <img src="assets/pests/photos/cabbage-root-fly.jpg">
-            </div>
-            <div class="pest-card-content">
-              <h3>Cabbage Root Fly</h3>
-              <p class="pest-type">Insect</p>
-              <p>Affects: Cabbage</p>
-              <a href="pest-details.html">View Pest Details</a>
-            </div>
-          </article>
-
-          <article class="pest-card">
-            <div class="pest-image">
-              <img src="assets/pests/photos/red-spider-mite.jpg">
-            </div>
-            <div class="pest-card-content">
-              <h3>Red Spider Mite</h3>
-              <p class="pest-type">Mite</p>
-              <p>Affects: Tomato, Pepper, Cucumber</p>
-              <a href="pest-details.html">View Pest Details</a>
-            </div>
-          </article>
-
-          <article class="pest-card">
-            <div class="pest-image">
-              <img src="assets/pests/photos/thrips.jpg">
-            </div>
-            <div class="pest-card-content">
-              <h3>Thrips</h3>
-              <p class="pest-type">Insect</p>
-              <p>Affects: Tomato, Cucumber</p>
-              <a href="pest-details.html">View Pest Details</a>
-            </div>
-          </article>
-
-          <article class="pest-card">
-            <div class="pest-image">
-              <img src="assets/pests/photos/slugs-and-snails.jpg">
-            </div>
-            <div class="pest-card-content">
-              <h3>Slugs and Snails</h3>
-              <p class="pest-type">Mollusc</p>
-              <p>Affects: Cabbage, Potato, Lettuce, Cucumber, Strawberry, Spinach</p>
-              <a href="pest-details.html">View Pest Details</a>
-            </div>
-          </article>
-
-          <article class="pest-card">
-            <div class="pest-image">
-              <img src="assets/pests/photos/wireworms.jpg">
-            </div>
-            <div class="pest-card-content">
-              <h3>Wireworms</h3>
-              <p class="pest-type">Insect</p>
-              <p>Affects: Potato</p>
-              <a href="pest-details.html">View Pest Details</a>
-            </div>
-          </article>
-
-          <article class="pest-card">
-            <div class="pest-image">
-              <img src="assets/pests/photos/potato-cyst-nematodes.jpg">
-            </div>
-            <div class="pest-card-content">
-              <h3>Potato Cyst Nematodes</h3>
-              <p class="pest-type">Nematode</p>
-              <p>Affects: Potato, Tomato</p>
-              <a href="pest-details.html">View Pest Details</a>
-            </div>
-          </article>
-
-          <article class="pest-card">
-            <div class="pest-image">
-              <img src="assets/pests/photos/vine-weevil.jpg">
-            </div>
-            <div class="pest-card-content">
-              <h3>Vine Weevil</h3>
-              <p class="pest-type">Insect</p>
-              <p>Affects: Strawberry</p>
-              <a href="pest-details.html">View Pest Details</a>
-            </div>
-          </article>
-
-          <article class="pest-card">
-            <div class="pest-image">
-              <img src="assets/pests/photos/cutworms.jpg">
-            </div>
-            <div class="pest-card-content">
-              <h3>Cutworms</h3>
-              <p class="pest-type">Insect</p>
-              <p>Affects: Lettuce, Potato</p>
-              <a href="pest-details.html">View Pest Details</a>
-            </div>
-          </article>
-        </div>   
-      </section>
     </main>
+
     <footer>
-      <p>&copy; 2026 Pest2Veg</p>
-      <p>Supporting sustainable crop protection and UN Sustainable Development Goal 2: Zero Hunger.</p>
+        © 2026 Pest2Veg · Supporting sustainable crop awareness and
+        UN Sustainable Development Goal 2.
     </footer>
-  </body>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+
+</body>
+
 </html>

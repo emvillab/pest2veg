@@ -1,54 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>About | Pest2Veg</title>
+
     <link rel="stylesheet" href="style.css">
-    <title>Pest2Veg | About</title>
-    <meta name="description" content="Pest2Veg helps UK growers identify common crop pests and find useful pest information.">
-  </head>
-  <body>
+</head>
+
+<body>
+
     <header>
-      <img src="pest2veg-logo.svg" alt="Pest2Veg">
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="gallery.html">Pest Gallery</a>
-        <a href="identify.html">Identify a Pest</a>
-        <a href="resources.html">Resources</a>
-        <a class="active" href="about.html">About</a>
-      </nav>
+
+        <a href="index.html">
+            <img
+                class="logo"
+                src="assets/pest2veg-logo.svg"
+                alt="Pest2Veg">
+        </a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Pest Gallery</a>
+            <a href="identify.html">Identify a Pest</a>
+            <a class="active" href="about.html">About</a>
+        </nav>
+
     </header>
-    <main>
-      <section class="about-intro">
+
+    <main class="section">
+
         <h1>About Pest2Veg</h1>
-        <p class="page-intro">Pest2Veg is an educational web application designed to help UK growers identify possible crop pests and access clear, practical pest information.</p>
-      </section>
 
-      <section class="about-section">
-        <h2>Our Purpose</h2>
-        <p>Pest2Veg aims to make pest information easier to understand and access. Users can browse common UK crop pests or use crop and symptom information to find possible pest matches.</p>
-        
-        <p>The information provided by Pest2Veg is intended for educational and informational purposes and should not be treated as a definitive pest diagnosis.</p>
-      </section>
+        <div class="info-box">
 
-      <section class="about-section">
-        <h2>Supporting Sustainable Development Goal 2</h2>
-        <p>Pest2Veg supports the principles of UN Sustainable Development Goal 2: Zero Hunger by promoting access to information that can help growers recognise crop pests and make informed crop protection decisions.</p>
-        
-        <p>The project particularly relates to sustainable and resilient agricultural practices by encouraging pest awareness and responsible crop management.</p>
-      </section>
+            <h2>Purpose</h2>
 
-      <section class="about-section">
-        <h2>How Pest2Veg Works</h2>
-        <p>Pest2Veg allows users to select a crop and the symptoms they have observed. The application then compares those selections with verified pest information and displays possible matches.</p>
-        
-        <p>Users can also browse the Pest Gallery to learn about common pests, affected crops, signs of damage and responsible management approaches.</p>
-      </section>
+            <p>
+                Pest2Veg is a front-end educational prototype designed to help
+                UK growers explore a selected range of common crop pests.
+                It supports six crops: tomato, cabbage, potato, lettuce,
+                pepper and cucumber.
+            </p>
 
+        </div>
+
+        <div class="info-box">
+
+            <h2>How identification works</h2>
+
+            <p>
+                The user chooses a crop, visible damage and the location of
+                that damage. Simple JavaScript compares those choices with
+                the pest dataset and displays possible matches. It does not
+                calculate a probability or make a diagnosis.
+            </p>
+
+        </div>
+
+        <div class="info-box">
+
+            <h2>SDG 2: Zero Hunger</h2>
+
+            <p>
+                The project links to UN Sustainable Development Goal 2 by
+                promoting access to crop-pest information and awareness of
+                responsible crop management.
+            </p>
+
+        </div>
+
+        <div class="info-box">
+
+            <h2>Limitations</h2>
+
+            <p>
+                This prototype contains a selected set of pests rather than
+                an exhaustive UK pest database. Pest symptoms can overlap,
+                so users should confirm identification using trusted
+                horticultural or agricultural guidance before taking action.
+            </p>
+
+        </div>
     </main>
+
     <footer>
-      <p>&copy; 2026 Pest2Veg</p>
-      <p>Supporting sustainable crop protection and UN Sustainable Development Goal 2: Zero Hunger.</p>
+        © 2026 Pest2Veg · Supporting sustainable crop awareness and
+        UN Sustainable Development Goal 2.
     </footer>
-  </body>
+
+</body>
+
 </html>
