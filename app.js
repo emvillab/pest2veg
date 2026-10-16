@@ -1,0 +1,325 @@
+function byId(id) {
+    return document.getElementById(id);
+}
+
+
+function pestLink(pest) {
+    return `pest.html?id=${encodeURIComponent(pest.id)}`;
+}
+
+
+function buildGallery() {
+    const grid = byId('pest-grid');
+
+    if (!grid) {
+        return;
+    }
+
+    const cropFilter = byId('crop-filter');
+
+    cropFilter.innerHTML =
+        '<option value="">All crops</option>' +
+        crops.map(c => `<option>${c}</option>`).join('');
+
+
+    function showPests() {
+        const search = byId('search').value
+            .toLowerCase()
+            .trim();
+
+        const crop = cropFilter.value;
+
+        const shown = pests.filter(p =>
+            (!crop || p.crops.includes(crop)) &&
+            (!search || p.name.toLowerCase().includes(search))
+        );
+
+        byId('gallery-count').textContent =
+            `${shown.length} pest${shown.length === 1 ? '' : 's'} found`;
+
+        grid.innerHTML = shown.map(p => `
+
+            <article class="card">
+
+                <img
+                    src="${p.image}"
+                    alt="${p.name}">
+
+                <div class="card-body">
+
+                    <h2>${p.name}</h2>
+
+                    <p>
+                        ${p.crops.join(', ')}
+                    </p>
+
+                    <a
+                        class="button"
+                        href="${pestLink(p)}">
+                        View Pest
+                    </a>
+
+                </div>
+
+            </article>
+
+        `).join('');
+    }
+
+
+    byId('search').addEventListener(
+        'input',
+        showPests
+    );
+
+    cropFilter.addEventListener(
+        'change',
+        showPests
+    );
+
+    showPests();
+}
+
+
+function buildIdentifier() {
+    if (!byId('crop')) {
+        return;
+    }
+
+    byId('crop').innerHTML =
+        '<option value="">Choose a crop</option>' +
+        crops.map(c => `<option>${c}</option>`).join('');
+
+
+    function updateDamage() {
+        const crop = byId('crop').value;
+
+        const relevant = pests.filter(p =>
+            p.crops.includes(crop)
+        );
+
+        const damages = [
+            ...new Set(
+                relevant.flatMap(p => p.damage)
+            )
+        ].sort();
+
+        byId('damage').innerHTML =
+            '<option value="">Choose damage</option>' +
+            damages.map(d => `<option>${d}</option>`).join('');
+
+        byId('location').innerHTML =
+            '<option value="">Choose damage first</option>';
+
+        byId('results').innerHTML = '';
+    }
+
+
+    function updateLocation() {
+        const crop = byId('crop').value;
+        const damage = byId('damage').value;
+
+        const relevant = pests.filter(p =>
+            p.crops.includes(crop) &&
+            p.damage.includes(damage)
+        );
+
+        const locations = [
+            ...new Set(
+                relevant.flatMap(p => p.locations)
+            )
+        ].sort();
+
+        byId('location').innerHTML =
+            '<option value="">Choose location</option>' +
+            locations.map(l => `<option>${l}</option>`).join('');
+
+        byId('results').innerHTML = '';
+    }
+
+
+    byId('crop').addEventListener(
+        'change',
+        updateDamage
+    );
+
+    byId('damage').addEventListener(
+        'change',
+        updateLocation
+    );
+
+    byId('find-pest').addEventListener('click', () => {
+        const crop = byId('crop').value;
+        const damage = byId('damage').value;
+        const location = byId('location').value;
+
+        const results = byId('results');
+
+
+        if (!crop || !damage || !location) {
+            results.innerHTML =
+                '<div class="message">Please choose a crop, damage and damage location.</div>';
+
+            return;
+        }
+
+
+        const matches = pests.filter(p =>
+            p.crops.includes(crop) &&
+            p.damage.includes(damage) &&
+            p.locations.includes(location)
+        );
+
+
+        if (!matches.length) {
+            results.innerHTML =
+                '<div class="message"><strong>No direct match found.</strong><br>Try another damage description or browse the Pest Gallery.</div>';
+
+            return;
+        }
+
+
+        results.innerHTML = `
+
+            <div class="message">
+
+                <strong>
+                    Possible pest match${matches.length > 1 ? 'es' : ''}
+                </strong>
+
+                <br>
+
+                These are possible matches, not a diagnosis.
+
+            </div>
+
+
+            <div class="result-list">
+
+                ${matches.map(p => `
+
+                    <div class="result">
+
+                        <img
+                            src="${p.image}"
+                            alt="${p.name}">
+
+                        <div class="result-info">
+
+                            <h3>${p.name}</h3>
+
+                            <p>
+                                ${p.summary}
+                            </p>
+
+                            <a
+                                class="button"
+                                href="${pestLink(p)}">
+                                View Pest Information
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                `).join('')}
+
+            </div>
+
+        `;
+    });
+}
+
+
+function buildPestPage() {
+    if (!byId('pest-detail')) {
+        return;
+    }
+
+    const id =
+        new URLSearchParams(window.location.search).get('id');
+
+    const pest = pests.find(p =>
+        p.id === id
+    );
+
+
+    if (!pest) {
+        byId('pest-detail').innerHTML =
+            '<div class="message">Pest not found. Please return to the Pest Gallery.</div>';
+
+        return;
+    }
+
+
+    document.title =
+        `${pest.name} | Pest2Veg`;
+
+
+    byId('pest-detail').innerHTML = `
+
+        <div>
+
+            <img
+                src="${pest.image}"
+                alt="${pest.name}">
+
+            <p class="small">
+                Image used from the team research asset set.
+                See the team image-credit record for full attribution.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <p>
+                <strong>${pest.type}</strong>
+            </p>
+
+            <h1>${pest.name}</h1>
+
+            <p>
+                <em>${pest.scientific}</em>
+            </p>
+
+            <p>
+                ${pest.summary}
+            </p>
+
+            <p>
+                <strong>Affected crops:</strong>
+                ${pest.crops.join(', ')}
+            </p>
+
+        </div>
+
+    `;
+
+
+    byId('damage-info').innerHTML =
+        '<ul>' +
+        pest.damage.map(x => `<li>${x}</li>`).join('') +
+        '</ul>';
+
+    byId('location-info').innerHTML =
+        '<ul>' +
+        pest.locations.map(x => `<li>${x}</li>`).join('') +
+        '</ul>';
+
+    byId('management-info').innerHTML =
+        '<ul>' +
+        pest.management.map(x => `<li>${x}</li>`).join('') +
+        '</ul>';
+
+    byId('source-info').textContent =
+        pest.source;
+}
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    buildGallery();
+    buildIdentifier();
+    buildPestPage();
+});
