@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Pest Gallery | Pest2Veg</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <a href="index.html">
+            <img
+                class="logo"
+                src="assets/pest2veg-logo.svg"
+                alt="Pest2Veg">
+        </a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a class="active" href="gallery.html">Pest Gallery</a>
+            <a href="identify.html">Identify a Pest</a>
+            <a href="about.html">About</a>
+        </nav>
+
+    </header>
+
+    <main class="section">
+
+        <h1>Pest Gallery</h1>
+
+        <p>
+            Browse the selected pests used in this Pest2Veg prototype.
+        </p>
+
+        <div class="controls">
+
+            <div class="form-group">
+
+                <label for="search">
+                    Search pests
+                </label>
+
+                <input
+                    id="search"
+                    type="search"
+                    placeholder="e.g. Aphids">
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="crop-filter">
+                    Filter by crop
+                </label>
+
+                <select id="crop-filter"></select>
+
+            </div>
+
+            <strong id="gallery-count"></strong>
+
+        </div>
+
+        <div
+            id="pest-grid"
+            class="cards"
+            style="margin-top:25px">
+        </div>
+
+    </main>
+
+    <footer>
+        © 2026 Pest2Veg · Supporting sustainable crop awareness and
+        UN Sustainable Development Goal 2.
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
