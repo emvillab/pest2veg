@@ -264,11 +264,6 @@ function buildPestPage() {
                 src="${pest.image}"
                 alt="${pest.name}">
 
-            <p class="small">
-                Image used from the team research asset set.
-                See the team image-credit record for full attribution.
-            </p>
-
         </div>
 
 
