@@ -28,7 +28,7 @@ const pests = [
             'Check new growth regularly.',
             'Encourage natural predators such as ladybirds and hoverflies.'],
 
-        image: 'assets/pests/aphids.jpg',
+        image: 'assets/pests/photos/aphids.jpg',
         source: 'RHS – Aphids'
     },
 
@@ -57,7 +57,7 @@ const pests = [
             'Check the underside of leaves.',
             'Remove badly infested leaves where practical.'],
 
-        image: 'assets/pests/mealy-cabbage-aphid.jpg',
+        image: 'assets/pests/photos/mealy-cabbage-aphid.jpg',
         source: 'RHS – Mealy cabbage aphid'
     },
 
@@ -86,7 +86,7 @@ const pests = [
             'Check leaf undersides regularly.',
             'Remove badly affected leaves and keep plants well ventilated.'],
 
-        image: 'assets/pests/glasshouse-whitefly.jpg',
+        image: 'assets/pests/photos/glasshouse-whitefly.jpg',
         source: 'RHS – Glasshouse whitefly'
     },
 
@@ -112,7 +112,7 @@ const pests = [
             'Inspect plants and remove caterpillars where practical.',
             'Use suitable crop netting to reduce egg laying.'],
 
-        image: 'assets/pests/cabbage-caterpillars.jpg',
+        image: 'assets/pests/photos/cabbage-caterpillars.jpg',
         source: 'RHS – Cabbage caterpillars'
     },
 
@@ -140,7 +140,7 @@ const pests = [
             'Use insect-proof mesh or suitable brassica collars.',
             'Rotate brassica crops.'],
 
-        image: 'assets/pests/cabbage-root-fly.jpg',
+        image: 'assets/pests/photos/cabbage-root-fly.jpg',
         source: 'RHS – Cabbage root fly'
     },
 
@@ -168,7 +168,7 @@ const pests = [
             'Check leaves for fine webbing.',
             'Maintain good plant care and avoid drought stress.'],
 
-        image: 'assets/pests/red-spider-mite.jpg',
+        image: 'assets/pests/photos/red-spider-mite.jpg',
         source: 'RHS – Glasshouse red spider mite'
     },
 
@@ -197,7 +197,7 @@ const pests = [
             'Check flowers and young leaves.',
             'Remove badly damaged growth where practical.'],
 
-        image: 'assets/pests/thrips.jpg',
+        image: 'assets/pests/photos/thrips.jpg',
         source: 'RHS – Thrips'
     },
 
@@ -229,7 +229,7 @@ const pests = [
             'Check vulnerable plants after rain or after dark.',
             'Reduce unnecessary hiding places near young plants.'],
 
-        image: 'assets/pests/slugs-and-snails.jpg',
+        image: 'assets/pests/photos/slugs-and-snails.jpg',
         source: 'RHS – Slugs and snails'
     },
 
@@ -255,7 +255,7 @@ const pests = [
             'Inspect tubers when lifting the crop.',
             'Use crop rotation and appropriate soil management.'],
 
-        image: 'assets/pests/wireworms.jpg',
+        image: 'assets/pests/photos/wireworms.jpg',
         source: 'RHS – Wireworms'
     },
 
@@ -284,7 +284,7 @@ const pests = [
             'Use crop rotation.',
             'Avoid moving potentially infested soil to clean ground.'],
 
-        image: 'assets/pests/potato-cyst-nematodes.jpg',
+        image: 'assets/pests/photos/potato-cyst-nematodes.jpg',
         source: 'RHS – Potato cyst nematodes'
     },
 
@@ -312,7 +312,7 @@ const pests = [
             'Check around damaged seedlings and stem bases.',
             'Remove caterpillars found around affected plants.'],
 
-        image: 'assets/pests/cutworms.jpg',
+        image: 'assets/pests/photos/cutworms.jpg',
         source: 'RHS – Cutworms'
     }
 
