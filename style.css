@@ -250,6 +250,12 @@ input[type="search"] {
     border: 1px solid #ddd;
 }
 
+.result img {
+    width: 140px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 6px;
+}
 
 .result h3 {
     margin: 0 0 5px;
