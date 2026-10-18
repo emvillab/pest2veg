@@ -361,8 +361,13 @@ footer {
 
 
     .hero-layout {
-        flex-direction: column;
-        align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    }
+
+    .hero {
+        padding: 40px 8%;
     }
 
 
@@ -373,7 +378,7 @@ footer {
 
 
     .hero-image img {
-        max-width: 220px;
+        max-width: 160px;
     }
 
 
@@ -392,6 +397,10 @@ footer {
     }
 }
 
+    .menu-toggle {
+    display: none;
+    }
+
 @media (max-width: 700px) {
     .crop-options {
         grid-template-columns: repeat(2, 1fr);
@@ -399,5 +408,101 @@ footer {
 
     .crop-option img {
         height: 120px;
+    }
+
+    header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+    header nav {
+    display: none;
+    }
+
+    .menu-toggle {
+    display: block;
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    }
+
+    header nav.open {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: white;
+    padding: 16px;
+    gap: 16px;
+    z-index: 1000;
+    }
+
+    header {
+    position: relative;
+    }
+
+    .result {
+    display: block;
+    }
+
+    .result img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 12px;
+    }
+
+    .result .button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 16px;
+    }
+
+    .card-body {
+    padding: 16px;
+    }
+
+    .card-body h2 {
+    margin-top: 0;
+    }
+
+    .card-body .button {
+    display: inline-block;
+    margin-top: 8px;
+    }
+
+    .card > img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    }
+
+    .pest-detail img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    }
+
+    .pest-page {
+        padding-top: 24px;
+    }
+
+    .info-box {
+    padding: 20px;
+    margin-top: 16px;
+    }
+
+    .pest-info-grid {
+        margin-top: 32px;
+    }
+
+    .pest-info-grid .info-box {
+        margin-bottom: 20px;
     }
 }
