@@ -139,7 +139,11 @@ updateDamage()
 
         const damages = [
             ...new Set(
-                relevant.flatMap(p => p.damage)
+                relevant.flatMap(p =>
+                    p.damage.filter(d =>
+                        crop === 'Potato' || d !== 'Tunnels in potato tubers'
+                    )
+                )
             )
         ].sort();
 
@@ -166,7 +170,11 @@ updateDamage()
 
         const locations = [
             ...new Set(
-                relevant.flatMap(p => p.locations)
+                relevant.flatMap(p =>
+                    p.locations.filter(l =>
+                        crop === 'Potato' || l !== 'Tubers'
+                    )
+                )
             )
         ].sort();
 
