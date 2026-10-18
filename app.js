@@ -357,9 +357,28 @@ function buildPestPage() {
         pest.source;
 }
 
+function buildMobileMenu() {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('header nav');
+
+    if (!menuToggle || !nav) {
+        return;
+    }
+
+    menuToggle.addEventListener('click', () => {
+        nav.classList.toggle('open');
+
+        const isOpen = nav.classList.contains('open');
+
+        menuToggle.setAttribute('aria-expanded', isOpen);  
+
+        menuToggle.textContent = isOpen ? '✕' : '☰';
+    });
+}
 
 document.addEventListener('DOMContentLoaded', () => {
     buildGallery();
     buildIdentifier();
     buildPestPage();
+    buildMobileMenu();
 });
