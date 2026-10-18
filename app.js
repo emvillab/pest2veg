@@ -86,9 +86,48 @@ function buildIdentifier() {
         return;
     }
 
-    byId('crop').innerHTML =
-        '<option value="">Choose a crop</option>' +
-        crops.map(c => `<option>${c}</option>`).join('');
+    const cropOptions = byId('crop-options');
+
+    const cropImages = {
+    Tomato: 'assets/crops/tomato.jpg',
+    Cabbage: 'assets/crops/cabbage.jpg',
+    Potato: 'assets/crops/potato.jpg',
+    Lettuce: 'assets/crops/lettuce.jpg',
+    Pepper: 'assets/crops/pepper.jpg',
+    Cucumber: 'assets/crops/cucumber.jpg'
+};
+
+cropOptions.innerHTML = crops.map(c => `
+    <button
+        type="button"
+        class="crop-option"
+        data-crop="${c}">
+        <img src="${cropImages[c]}" alt="${c}">
+        <span>${c}</span>
+    </button>
+`).join('');
+
+cropOptions.addEventListener('click', (event) => {
+    const button = event.target.closest('.crop-option');
+
+    if (!button) {
+        return;
+    }
+
+    cropOptions.querySelectorAll('.crop-option').forEach(option => {
+    option.classList.remove('selected');
+});
+
+button.classList.add('selected');
+
+    byId('crop').value = button.dataset.crop;
+
+byId('damage-group').hidden = false;
+byId('location-group').hidden = true;
+byId('find-pest').hidden = true;
+
+updateDamage()
+});
 
 
     function updateDamage() {
@@ -118,6 +157,7 @@ function buildIdentifier() {
     function updateLocation() {
         const crop = byId('crop').value;
         const damage = byId('damage').value;
+        byId('location-group').hidden = false;
 
         const relevant = pests.filter(p =>
             p.crops.includes(crop) &&
@@ -147,6 +187,11 @@ function buildIdentifier() {
         'change',
         updateLocation
     );
+
+    byId('location').addEventListener('change', () => {
+    byId('find-pest').hidden = !byId('location').value;
+    byId('results').innerHTML = '';
+});
 
     byId('find-pest').addEventListener('click', () => {
         const crop = byId('crop').value;

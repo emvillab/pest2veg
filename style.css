@@ -314,6 +314,41 @@ footer {
     margin-top: 40px;
 }
 
+.crop-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.crop-option {
+    padding: 0;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+    cursor: pointer;
+}
+
+.crop-option img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    display: block;
+}
+
+.crop-option span {
+    display: block;
+    padding: 10px;
+    font-weight: 600;
+}
+
+.crop-option.selected {
+    border: 3px solid #2f7d32;
+}
+
+[hidden] {
+    display: none !important;
+}
 
 /* Mobile layout */
 
@@ -355,5 +390,14 @@ footer {
     .pest-detail {
         grid-template-columns: 1fr;
     }
+}
 
+@media (max-width: 700px) {
+    .crop-options {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .crop-option img {
+        height: 120px;
+    }
 }
