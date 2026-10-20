@@ -14,19 +14,23 @@ const pests = [
 
         damage: [
             'Small insects on leaves',
-            'Sticky residue',
+            'Sticky honeydew',
             'Curled or distorted leaves',
-            'Stunted growth'],
+            'Yellowing leaves',
+            'Stunted growth',
+            'Sooty mould'],
 
         locations: [
-            'Leaves',
+    'Leaves',
+    'Undersides of leaves',
             'New growth'],
 
-        summary: 'Small sap-sucking insects that can distort new growth and leave sticky honeydew.',
+        summary: 'Small sap-sucking insects that feed on leaves and young growth. Large colonies can cause distorted growth and produce sticky honeydew.',
 
         management: [
-            'Check new growth regularly.',
-            'Encourage natural predators such as ladybirds and hoverflies.'],
+            'Check leaves, especially their undersides and new growth, regularly for developing colonies.',
+            'Encourage natural predators such as ladybirds, lacewings and hoverflies.',
+            'Small colonies can sometimes be removed by hand or carefully washed off with water.'],
 
         image: 'assets/pests/photos/aphids.jpg',
         source: 'RHS – Aphids'
@@ -72,18 +76,21 @@ const pests = [
             'Cucumber'],
 
         damage: [
-            'Small insects on leaves',
-            'Sticky residue',
-            'Black sooty mould'],
+            'Small white insects on leaves',
+            'Sticky honeydew',
+            'Black sooty mould',
+            'Yellowing leaves'],
 
         locations: [
-            'Leaves'],
+            'Leaves',
+            'Undersides of leaves'],
 
-        summary: 'Tiny white sap-feeding insects, commonly found on protected crops.',
+        summary: 'Tiny white sap-feeding insects commonly found on protected crops. Their feeding can weaken plants and the honeydew they produce can lead to sooty mould.',
 
         management: [
-            'Check leaf undersides regularly.',
-            'Remove badly affected leaves and keep plants well ventilated.'],
+            'Check the undersides of leaves regularly for adults and developing colonies.',
+            'Remove badly affected leaves where practical.',
+            'Keep growing areas clean and control weeds that may harbour whiteflies.'],
 
         image: 'assets/pests/photos/glasshouse-whitefly.jpg',
         source: 'RHS – Glasshouse whitefly'
@@ -161,17 +168,20 @@ const pests = [
             'Cucumber'],
 
         damage: [
-            'Mottled leaves',
-            'Fine webbing'],
+            'Pale or mottled leaves',
+            'Fine webbing',
+            'Early leaf drop'],
 
         locations: [
-            'Leaves'],
+            'Leaves',
+            'Undersides of leaves'],
 
-        summary: 'Tiny mites that cause pale mottling and fine webbing, especially under cover.',
+        summary: 'Tiny mites that feed on leaves, causing pale mottling and fine webbing, especially on plants grown under cover.',
 
         management: [
-            'Check leaves for fine webbing.',
-            'Maintain good plant care and avoid drought stress.'],
+            'Check the undersides of leaves regularly for mottling, mites and fine webbing.',
+            'Maintain good plant care and avoid drought stress.',
+            'Suitable biological controls can be used in protected growing environments.'],
 
         image: 'assets/pests/photos/red-spider-mite.jpg',
         source: 'RHS – Glasshouse red spider mite'
@@ -185,22 +195,26 @@ const pests = [
 
         crops: [
             'Tomato',
-            'Cucumber'],
+            'Cucumber',
+            'Pepper'],
 
         damage: [
             'Silvery patches',
             'Mottled leaves',
-            'Curled or distorted leaves'],
+            'Curled or distorted leaves',
+            'Damaged or distorted flowers'],
 
         locations: [
             'Leaves',
-            'Flowers'],
+            'Flowers',
+            'Buds and new growth'],
 
-        summary: 'Small slender insects that damage plant surfaces and can cause silvery patches.',
+        summary: 'Small slender insects that feed on plant tissue and can cause silvery patches, distorted growth and damage to flowers.',
 
         management: [
-            'Check flowers and young leaves.',
-            'Remove badly damaged growth where practical.'],
+            'Check flowers, buds and young leaves regularly for signs of thrips.',
+            'Remove badly damaged growth where practical.',
+            'Encourage or use suitable biological controls where appropriate.'],
 
         image: 'assets/pests/photos/thrips.jpg',
         source: 'RHS – Thrips'
@@ -228,11 +242,13 @@ const pests = [
             'Soil',
             'Tubers'],
 
-        summary: 'Molluscs that usually feed in damp conditions and leave ragged holes or slime trails.',
+        summary: 'Molluscs that feed mainly at night or in damp conditions, leaving irregular holes in leaves, slime trails and sometimes damage to potato tubers.',
 
         management: [
-            'Check vulnerable plants after rain or after dark.',
-            'Reduce unnecessary hiding places near young plants.'],
+            'Check vulnerable plants after rain, in damp weather or after dark.',
+            'Reduce unnecessary hiding places such as weeds and plant debris near vulnerable plants.',
+            'Protect young plants and seedlings where practical.',
+            'Water in the morning rather than evening to reduce damp conditions overnight.'],
 
         image: 'assets/pests/photos/slugs-and-snails.jpg',
         source: 'RHS – Slugs and snails'
