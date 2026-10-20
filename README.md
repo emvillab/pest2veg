@@ -47,11 +47,11 @@ The website pages, `style.css`, `app.js` and `data.js` stay in the top folder be
 
 | Role | Member |
 |---|---|
-| Data and identification logic lead 
-| Frontend layout lead 
-| UI/UX and gallery lead 
-| Research and content lead | Olugbodi Akinwole Ogunsheye Wray |
-| Integration and QA lead / Scrum Master
+| Front-end Development & Integration | Kamran Mirza |
+| JavaScript & Identification Logic | Shafaqat Ali |
+| Scrum Master, Wireframes & GitHub Coordination | Marvis Elvis Aigbe |
+| Pest Research & Content | Olugbodi Akinwole Ogunsheye Wray |
+| Research & Wireframe Support | Ikechukwu Thompson Agwu |
 
 ## Contributing
 
