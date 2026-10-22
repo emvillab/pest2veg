@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Pest Information | Pest2Veg</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <a href="index.html">
+            <img
+                class="logo"
+                src="assets/pest2veg-logo.svg"
+                alt="Pest2Veg">
+        </a>
+
+        <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false">
+            ☰
+        </button>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Pest Gallery</a>
+            <a href="identify.html">Identify a Pest</a>
+            <a href="about.html">About</a>
+        </nav>
+
+    </header>
+
+    <main class="section">
+
+        <p>
+            <a href="gallery.html">← Back to Pest Gallery</a>
+        </p>
+
+        <section
+            id="pest-detail"
+            class="pest-detail">
+        </section>
+
+        <section class="info-box">
+
+            <h2>Signs and damage</h2>
+
+            <div id="damage-info"></div>
+
+        </section>
+
+        <section class="info-box">
+
+            <h2>Where to look</h2>
+
+            <div id="location-info"></div>
+
+        </section>
+
+        <section class="info-box">
+
+            <h2>Management and prevention</h2>
+
+            <div id="management-info"></div>
+
+        </section>
+
+        <section class="info-box">
+
+            <h2>Research source</h2>
+
+            <p id="source-info"></p>
+
+        </section>
+
+        <div class="notice">
+            This information is educational and should not be treated
+            as a definitive diagnosis.
+        </div>
+
+    </main>
+
+    <footer>
+        © 2026 Pest2Veg · Supporting sustainable crop awareness and
+        UN Sustainable Development Goal 2.
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>

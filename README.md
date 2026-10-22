@@ -15,25 +15,43 @@ A responsive, accessible pest information website with a crop and symptom guide 
 
 ## Built with
 
-HTML, CSS, JavaScript and a JSON data file. No build step or server needed.
+HTML, CSS and JavaScript. Pest and crop data lives in `data.js`. No build step or server needed.
 
 ## Run it
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/emvillab/pest2veg.git
 ```
 
 Open `index.html` in a browser, or use the VS Code Live Server extension.
+
+## Project structure
+
+```
+pest2veg/
+├── index.html, gallery.html, identify.html, pest.html, about.html   Website pages
+├── style.css, app.js, data.js                                       Styles, logic and pest/crop data
+├── assets/                                                          Logos, crop images and pest photos
+└── docs/
+    ├── data/                  Master data workbook (source for data.js)
+    ├── research/              Team research notes (one file per crop or topic)
+    │   └── source-docs/       Original Word documents
+    ├── data-review-report.md
+    ├── identification-flow.md How the Identify a Pest guide works
+    └── image-credits.md       Sources and permissions for every image
+```
+
+The website pages, `style.css`, `app.js` and `data.js` stay in the top folder because the pages link to each other by relative paths.
 
 ## Team
 
 | Role | Member |
 |---|---|
-| Data and identification logic lead 
-| Frontend layout lead 
-| UI/UX and gallery lead 
-| Research and content lead | Olugbodi Akinwole Ogunsheye Wray |
-| Integration and QA lead / Scrum Master
+| Front-end Development & Integration | Kamran Mirza |
+| JavaScript & Identification Logic | Shafaqat Ali |
+| Scrum Master, Wireframes & GitHub Coordination | Marvis Elvis Aigbe |
+| Pest Research & Content | Olugbodi Akinwole Ogunsheye Wray |
+| Research & Wireframe Support | Ikechukwu Thompson Agwu |
 
 ## Contributing
 
@@ -42,6 +60,6 @@ Open `index.html` in a browser, or use the VS Code Live Server extension.
 
 ## Credits
 
-Pest images and information are credited in `data/pests.json`.
+Pest images and information are credited in `docs/image-credits.md`.
 
 _Student project for CPU4106-20C. Work is the team's own._
