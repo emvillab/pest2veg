@@ -28,10 +28,9 @@ const pests = [
             'Check new growth regularly.',
             'Encourage natural predators such as ladybirds and hoverflies.'],
 
-        image: 'assets/pests/aphids.jpg',
+        image: 'assets/pests/photos/aphids.jpg',
         source: 'RHS – Aphids'
     },
-
 
     {
         id: 'mealy-cabbage-aphid',
@@ -43,22 +42,22 @@ const pests = [
             'Cabbage'],
 
         damage: [
-            'Small insects on leaves',
-            'Yellowing leaves',
-            'Curled or distorted leaves'],
+            'Pale or yellowing areas on leaves',
+            'Crumpled or distorted foliage',
+            'Stunted young plants'],
 
         locations: [
             'Leaves',
-            'New growth'],
+            'Developing growth'],
 
-        summary: 'A grey-white aphid that feeds on brassicas and can weaken young cabbage plants.',
+        summary: 'A sap-feeding aphid found on cabbage and other brassicas. It has a distinctive greyish-white, waxy appearance and can cause distorted growth.',
 
         management: [
-            'Check the underside of leaves.',
-            'Remove badly infested leaves where practical.'],
+            'Check plants regularly for developing colonies.',
+            'Encourage natural enemies such as ladybirds, hoverflies and parasitic wasps.'],
 
-        image: 'assets/pests/mealy-cabbage-aphid.jpg',
-        source: 'RHS – Mealy cabbage aphid'
+        image: 'assets/pests/photos/mealy-cabbage-aphid.jpg',
+        source: 'AHDB – Biology and management of the mealy cabbage aphid'
     },
 
     {
@@ -86,14 +85,14 @@ const pests = [
             'Check leaf undersides regularly.',
             'Remove badly affected leaves and keep plants well ventilated.'],
 
-        image: 'assets/pests/glasshouse-whitefly.jpg',
+        image: 'assets/pests/photos/glasshouse-whitefly.jpg',
         source: 'RHS – Glasshouse whitefly'
     },
 
     {
         id: 'cabbage-caterpillars',
         name: 'Cabbage Caterpillars',
-        scientific: 'Pieris brassicae, P. rapae, P. napi',
+        scientific: 'Pieris brassicae, Pieris rapae, Mamestra brassicae',
         type: 'Insect',
 
         crops: [
@@ -101,18 +100,22 @@ const pests = [
 
         damage: [
             'Holes in leaves',
-            'Caterpillars on leaves'],
+            'Chewed outer foliage',
+            'Damage to inner leaves or the cabbage heart',
+            'Caterpillars or droppings may be visible'],
 
         locations: [
-            'Leaves'],
+            'Outer leaves',
+            'Inner leaves',
+            'Cabbage heart'],
 
-        summary: 'Caterpillars of cabbage white butterflies that feed on cabbage leaves.',
+        summary: 'The caterpillars of several butterfly and moth species feed on cabbage and other brassicas. Their appearance and feeding behaviour can vary.',
 
         management: [
-            'Inspect plants and remove caterpillars where practical.',
-            'Use suitable crop netting to reduce egg laying.'],
+            'Check plants regularly for eggs, caterpillars and fresh feeding damage.',
+            'Fine-mesh crop covers can help protect plants from egg-laying adults when used correctly.'],
 
-        image: 'assets/pests/cabbage-caterpillars.jpg',
+        image: 'assets/pests/photos/cabbage-caterpillars.jpg',
         source: 'RHS – Cabbage caterpillars'
     },
 
@@ -126,22 +129,24 @@ const pests = [
             'Cabbage'],
 
         damage: [
+            'Poor growth',
             'Wilting',
-            'Stunted growth',
-            'Root damage'],
+            'Severe attacks can kill young plants',
+            'Root damage may be present even when above-ground symptoms are limited'],
 
         locations: [
             'Roots',
-            'Whole plant'],
+            'Soil around the base of the plant'],
 
-        summary: 'The larvae feed on brassica roots, causing young plants to wilt and grow poorly.',
+        summary: 'A brassica pest whose larvae feed mainly on roots below ground. Young and recently transplanted cabbage plants are particularly vulnerable.',
 
         management: [
-            'Use insect-proof mesh or suitable brassica collars.',
-            'Rotate brassica crops.'],
+            'Monitor young plants carefully.',
+            'Fine-mesh crop covers can help reduce egg laying.',
+            'Inspect roots when unexplained wilting or poor growth occurs.'],
 
-        image: 'assets/pests/cabbage-root-fly.jpg',
-        source: 'RHS – Cabbage root fly'
+        image: 'assets/pests/photos/cabbage-root-fly.jpg',
+        source: 'AHDB – Cabbage root fly biology and management in brassica crops'
     },
 
     {
@@ -168,7 +173,7 @@ const pests = [
             'Check leaves for fine webbing.',
             'Maintain good plant care and avoid drought stress.'],
 
-        image: 'assets/pests/red-spider-mite.jpg',
+        image: 'assets/pests/photos/red-spider-mite.jpg',
         source: 'RHS – Glasshouse red spider mite'
     },
 
@@ -197,7 +202,7 @@ const pests = [
             'Check flowers and young leaves.',
             'Remove badly damaged growth where practical.'],
 
-        image: 'assets/pests/thrips.jpg',
+        image: 'assets/pests/photos/thrips.jpg',
         source: 'RHS – Thrips'
     },
 
@@ -229,7 +234,7 @@ const pests = [
             'Check vulnerable plants after rain or after dark.',
             'Reduce unnecessary hiding places near young plants.'],
 
-        image: 'assets/pests/slugs-and-snails.jpg',
+        image: 'assets/pests/photos/slugs-and-snails.jpg',
         source: 'RHS – Slugs and snails'
     },
 
@@ -255,7 +260,7 @@ const pests = [
             'Inspect tubers when lifting the crop.',
             'Use crop rotation and appropriate soil management.'],
 
-        image: 'assets/pests/wireworms.jpg',
+        image: 'assets/pests/photos/wireworms.jpg',
         source: 'RHS – Wireworms'
     },
 
@@ -284,7 +289,7 @@ const pests = [
             'Use crop rotation.',
             'Avoid moving potentially infested soil to clean ground.'],
 
-        image: 'assets/pests/potato-cyst-nematodes.jpg',
+        image: 'assets/pests/photos/potato-cyst-nematodes.jpg',
         source: 'RHS – Potato cyst nematodes'
     },
 
@@ -312,7 +317,7 @@ const pests = [
             'Check around damaged seedlings and stem bases.',
             'Remove caterpillars found around affected plants.'],
 
-        image: 'assets/pests/cutworms.jpg',
+        image: 'assets/pests/photos/cutworms.jpg',
         source: 'RHS – Cutworms'
     }
 

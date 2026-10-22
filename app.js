@@ -86,9 +86,48 @@ function buildIdentifier() {
         return;
     }
 
-    byId('crop').innerHTML =
-        '<option value="">Choose a crop</option>' +
-        crops.map(c => `<option>${c}</option>`).join('');
+    const cropOptions = byId('crop-options');
+
+    const cropImages = {
+    Tomato: 'assets/crops/tomato.jpg',
+    Cabbage: 'assets/crops/cabbage.jpg',
+    Potato: 'assets/crops/potato.jpg',
+    Lettuce: 'assets/crops/lettuce.jpg',
+    Pepper: 'assets/crops/pepper.jpg',
+    Cucumber: 'assets/crops/cucumber.jpg'
+};
+
+cropOptions.innerHTML = crops.map(c => `
+    <button
+        type="button"
+        class="crop-option"
+        data-crop="${c}">
+        <img src="${cropImages[c]}" alt="${c}">
+        <span>${c}</span>
+    </button>
+`).join('');
+
+cropOptions.addEventListener('click', (event) => {
+    const button = event.target.closest('.crop-option');
+
+    if (!button) {
+        return;
+    }
+
+    cropOptions.querySelectorAll('.crop-option').forEach(option => {
+    option.classList.remove('selected');
+});
+
+button.classList.add('selected');
+
+    byId('crop').value = button.dataset.crop;
+
+byId('damage-group').hidden = false;
+byId('location-group').hidden = true;
+byId('find-pest').hidden = true;
+
+updateDamage()
+});
 
 
     function updateDamage() {
@@ -100,7 +139,11 @@ function buildIdentifier() {
 
         const damages = [
             ...new Set(
-                relevant.flatMap(p => p.damage)
+                relevant.flatMap(p =>
+                    p.damage.filter(d =>
+                        crop === 'Potato' || d !== 'Tunnels in potato tubers'
+                    )
+                )
             )
         ].sort();
 
@@ -118,6 +161,7 @@ function buildIdentifier() {
     function updateLocation() {
         const crop = byId('crop').value;
         const damage = byId('damage').value;
+        byId('location-group').hidden = false;
 
         const relevant = pests.filter(p =>
             p.crops.includes(crop) &&
@@ -126,7 +170,11 @@ function buildIdentifier() {
 
         const locations = [
             ...new Set(
-                relevant.flatMap(p => p.locations)
+                relevant.flatMap(p =>
+                    p.locations.filter(l =>
+                        crop === 'Potato' || l !== 'Tubers'
+                    )
+                )
             )
         ].sort();
 
@@ -147,6 +195,11 @@ function buildIdentifier() {
         'change',
         updateLocation
     );
+
+    byId('location').addEventListener('change', () => {
+    byId('find-pest').hidden = !byId('location').value;
+    byId('results').innerHTML = '';
+});
 
     byId('find-pest').addEventListener('click', () => {
         const crop = byId('crop').value;
@@ -264,11 +317,6 @@ function buildPestPage() {
                 src="${pest.image}"
                 alt="${pest.name}">
 
-            <p class="small">
-                Image used from the team research asset set.
-                See the team image-credit record for full attribution.
-            </p>
-
         </div>
 
 
@@ -317,9 +365,28 @@ function buildPestPage() {
         pest.source;
 }
 
+function buildMobileMenu() {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('header nav');
+
+    if (!menuToggle || !nav) {
+        return;
+    }
+
+    menuToggle.addEventListener('click', () => {
+        nav.classList.toggle('open');
+
+        const isOpen = nav.classList.contains('open');
+
+        menuToggle.setAttribute('aria-expanded', isOpen);  
+
+        menuToggle.textContent = isOpen ? '✕' : '☰';
+    });
+}
 
 document.addEventListener('DOMContentLoaded', () => {
     buildGallery();
     buildIdentifier();
     buildPestPage();
+    buildMobileMenu();
 });
