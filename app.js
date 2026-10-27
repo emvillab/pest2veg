@@ -89,45 +89,48 @@ function buildIdentifier() {
     const cropOptions = byId('crop-options');
 
     const cropImages = {
-    Tomato: 'assets/crops/tomato.jpg',
-    Cabbage: 'assets/crops/cabbage.jpg',
-    Potato: 'assets/crops/potato.jpg',
-    Lettuce: 'assets/crops/lettuce.jpg',
-    Pepper: 'assets/crops/pepper.jpg',
-    Cucumber: 'assets/crops/cucumber.jpg'
-};
+        Tomato: 'assets/crops/tomato.jpg',
+        Cabbage: 'assets/crops/cabbage.jpg',
+        Potato: 'assets/crops/potato.jpg',
+        Lettuce: 'assets/crops/lettuce.jpg',
+        Pepper: 'assets/crops/pepper.jpg',
+        Cucumber: 'assets/crops/cucumber.jpg'
+    };
 
-cropOptions.innerHTML = crops.map(c => `
-    <button
-        type="button"
-        class="crop-option"
-        data-crop="${c}">
-        <img src="${cropImages[c]}" alt="${c}">
-        <span>${c}</span>
-    </button>
-`).join('');
+    cropOptions.innerHTML = crops.map(c => `
+        <button
+            type="button"
+            class="crop-option"
+            data-crop="${c}"
+            aria-pressed="false">
+            <img src="${cropImages[c]}" alt="">
+            <span>${c}</span>
+        </button>
+    `).join('');
 
-cropOptions.addEventListener('click', (event) => {
-    const button = event.target.closest('.crop-option');
+    cropOptions.addEventListener('click', (event) => {
+        const button = event.target.closest('.crop-option');
 
-    if (!button) {
-        return;
-    }
+        if (!button) {
+            return;
+        }
 
-    cropOptions.querySelectorAll('.crop-option').forEach(option => {
-    option.classList.remove('selected');
-});
+        cropOptions.querySelectorAll('.crop-option').forEach(option => {
+            option.classList.remove('selected');
+            option.setAttribute('aria-pressed', 'false');
+        });
 
-button.classList.add('selected');
+        button.classList.add('selected');
+        button.setAttribute('aria-pressed', 'true');
 
-    byId('crop').value = button.dataset.crop;
+        byId('crop').value = button.dataset.crop;
 
-byId('damage-group').hidden = false;
-byId('location-group').hidden = true;
-byId('find-pest').hidden = true;
+        byId('damage-group').hidden = false;
+        byId('location-group').hidden = true;
+        byId('find-pest').hidden = true;
 
-updateDamage()
-});
+        updateDamage();
+    });
 
 
     function updateDamage() {
@@ -161,7 +164,9 @@ updateDamage()
     function updateLocation() {
         const crop = byId('crop').value;
         const damage = byId('damage').value;
+
         byId('location-group').hidden = false;
+        byId('find-pest').hidden = true;
 
         const relevant = pests.filter(p =>
             p.crops.includes(crop) &&
@@ -197,9 +202,9 @@ updateDamage()
     );
 
     byId('location').addEventListener('change', () => {
-    byId('find-pest').hidden = !byId('location').value;
-    byId('results').innerHTML = '';
-});
+        byId('find-pest').hidden = !byId('location').value;
+        byId('results').innerHTML = '';
+    });
 
     byId('find-pest').addEventListener('click', () => {
         const crop = byId('crop').value;
@@ -365,6 +370,7 @@ function buildPestPage() {
         pest.source;
 }
 
+
 function buildMobileMenu() {
     const menuToggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('header nav');
@@ -378,11 +384,17 @@ function buildMobileMenu() {
 
         const isOpen = nav.classList.contains('open');
 
-        menuToggle.setAttribute('aria-expanded', isOpen);  
+        menuToggle.setAttribute('aria-expanded', isOpen);
+
+        menuToggle.setAttribute(
+            'aria-label',
+            isOpen ? 'Close menu' : 'Open menu'
+        );
 
         menuToggle.textContent = isOpen ? '✕' : '☰';
     });
 }
+
 
 document.addEventListener('DOMContentLoaded', () => {
     buildGallery();

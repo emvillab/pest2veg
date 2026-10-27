@@ -44,7 +44,7 @@ nav a {
 
 nav a:hover,
 nav a.active {
-    color: #39833f;
+    color: #123f2a;
     text-decoration: underline;
     text-underline-offset: 6px;
 }
@@ -118,7 +118,7 @@ main {
 .button {
     display: inline-block;
     background: #76b947;
-    color: white;
+    color: #123f2a;
     padding: 12px 20px;
     margin: 8px 8px 0 0;
     border: 0;
@@ -132,6 +132,7 @@ main {
 .button.secondary {
     background: transparent;
     border: 2px solid white;
+    color: white;
 }
 
 
@@ -359,7 +360,7 @@ footer {
 }
 
 .back-link:hover {
-    color: #39833f;
+    color: #123f2a;
     text-decoration: underline;
 }
 
