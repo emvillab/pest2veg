@@ -1,49 +1,44 @@
 # Pest2Veg
 
-A responsive, accessible pest information website with a crop and symptom guide for growers.
+Pest2Veg is a UK-focused educational front-end prototype for exploring possible crop-pest matches. It supports tomato, cabbage, potato, lettuce, pepper and cucumber, using 11 curated pest records. Results are possible matches, not a diagnosis or measured probability.
 
-**Pest2Veg is a UK-focused web application designed to help farmers, vegetable growers and allotment holders** identify common crop pests and narrow down **possible matches** by choosing a crop and the symptoms they see. It is not AI image recognition and not a diagnosis, so users should always verify with an authoritative source.
+## Run the website
 
-**Module:** CPU4106-20C Group Project | **SDG:** 2 Zero Hunger
+Open `index.html` in a browser. HTML, CSS and JavaScript run locally; no backend, login or build step is required. A local web server such as VS Code Live Server is optional.
 
-## Features
+## Current features
 
-- Pest gallery with search and filters
-- Identify a Pest guide: crop, then symptoms, then possible matches with reasons
-- Pest detail pages with sourced information
-- Works on mobile and desktop, with keyboard navigation and alt text
+- Gallery with case-insensitive pest-name search and a crop filter.
+- Identification using crop image buttons, one damage description and a required damage location.
+- All exact matching pest records are displayed; the user can open pest details.
+- Pest details contain descriptions, affected crops, signs, locations, management suggestions and source labels.
+- Responsive CSS and a mobile navigation toggle are implemented. Full browser and accessibility verification remains pending.
 
-## Built with
+The website does not provide AI recognition, confidence levels, symptom-name search in the gallery, a dedicated reset button, an administrator interface or clickable research-source links.
 
-HTML, CSS and JavaScript. Pest and crop data lives in `data.js`. No build step or server needed.
+## Verification
 
-## Run it
+Install Node.js if needed, then run from this folder:
 
-```bash
-git clone https://github.com/emvillab/pest2veg.git
+```sh
+node tests/run-checks.cjs
 ```
 
-Open `index.html` in a browser, or use the VS Code Live Server extension.
+The check runner writes results under `docs/testing/` and exits unsuccessfully while known defects remain. Read [test results](docs/testing/test-results.md) and the [manual checklist](docs/testing/manual-checklist.csv); automated passes are not proof of browser usability or factual accuracy.
 
-## Project structure
+## Project evidence
 
-```
-pest2veg/
-├── index.html, gallery.html, identify.html, pest.html, about.html   Website pages
-├── style.css, app.js, data.js                                       Styles, logic and pest/crop data
-├── assets/                                                          Logos, crop images and pest photos
-└── docs/
-    ├── data/                  Master data workbook (source for data.js)
-    ├── research/              Team research notes (one file per crop or topic)
-    │   └── source-docs/       Original Word documents
-    ├── data-review-report.md
-    ├── identification-flow.md How the Identify a Pest guide works
-    └── image-credits.md       Sources and permissions for every image
-```
+- [Evidence index and remaining gaps](docs/evidence-index.md)
+- [Current scope and matching limitations](docs/current-scope.md)
+- [Requirements and SDLC traceability](docs/requirements-traceability.md)
+- [Identification flow](docs/identification-flow.md)
+- [Scrum evidence and planned completion work](docs/scrum/README.md)
+- [Historical work record](docs/data-review-report.md) (not current test evidence)
+- [Image-credit working record](docs/image-credits.md) (verification issues remain)
 
-The website pages, `style.css`, `app.js` and `data.js` stay in the top folder because the pages link to each other by relative paths.
+`data.js` is the runtime dataset. The workbook in `docs/data/` and research in `docs/research/` are supporting inputs; workbook-to-code consistency and source accuracy still require team review. `wireframe/` contains four PNG designs.
 
-## Team
+## Team roles recorded in the existing README
 
 | Role | Member |
 |---|---|
@@ -53,13 +48,10 @@ The website pages, `style.css`, `app.js` and `data.js` stay in the top folder be
 | Pest Research & Content | Olugbodi Akinwole Ogunsheye Wray |
 | Research & Wireframe Support | Ikechukwu Thompson Agwu |
 
-## Contributing
+These are recorded assignments, not independent proof of completed contributions. See the Git evidence for author names and changes; aliases require confirmation.
 
-- Never push directly to `main`. Use a short branch (`feature/…`, `fix/…`, `docs/…`) and open a pull request.
-- Each pull request needs one review from another team member.
+## Collaboration and assessment
 
-## Credits
+Use a short branch and a pull request; request a review from another member. Local merge commits show a PR workflow, but remote review approvals and branch protection have not been verified.
 
-Pest images and information are credited in `docs/image-credits.md`.
-
-_Student project for CPU4106-20C. Work is the team's own._
+Module: CPU4106-20C. Intended SDG contribution: SDG 2 through access to crop-pest information; no yield improvement has been measured. The group should validate these supporting records. Individual articles and reflections must be the student's own work, following the assessment's authenticity and AI-use rules.
