@@ -1,0 +1,65 @@
+Commit SHA,Author timestamp as recorded,Git author name,Commit subject
+b8c2f866aa171ce98a91ccfa77c40f0780aa9454,2026-10-10T14:52:25+01:00,emvillab,Initial commit
+a6c0d5fb253d6812dd828058a8208c745e7e2356,2026-10-10T17:05:24+01:00,emvillab,Update README with project details and guidelines
+4550de5858813c12bb7abb21435701666c2ed95d,2026-10-10T18:20:59+01:00,KamyMirza,Add proposed pest identification flow
+9d4e1ea7bc4ccfa532e9e8113478dbe7a33e2c73,2026-10-10T18:28:48+01:00,KamyMirza,Add pest identification research
+0b53abc6c6a3e550212d6a9bd5dc259aabe35f93,2026-10-10T18:39:51+01:00,KamyMirza,Update README.md
+cc63a43671b7346e4a96deed4e2edb47f97ccaf9,2026-10-11T14:24:55+01:00,shagi871-glitch,Add files via upload
+7bd34e74cff753fb8b291ce8c043dcbda1ec5171,2026-10-12T20:50:25+01:00,KamyMirza,Add initial homepage HTML structure
+bd38f5c054742a4de1a3f8251c2d1938f32c1943,2026-10-12T21:47:51+01:00,emvillab,Rename project from Pestech to Pest2Veg
+d374e2ec6ee9165f8f16393dd2a505f0f7d86284,2026-10-12T22:16:23+01:00,emvillab,Merge pull request #1 from emvillab/feature/html-skeleton
+c3894bd071f75a27e7c0a6ea551247b709957788,2026-10-12T23:04:36+01:00,KamyMirza,Add pest gallery HTML structure
+61c8efcab1b6884332a9b747b0b54aad73ec2db1,2026-10-12T23:17:30+01:00,KamyMirza,Add Pest2Veg logo
+5b0f67280e1a373994f65caba1841191a3f3cf65,2026-10-12T23:20:34+01:00,KamyMirza,Add Pest2Veg logo to homepage header
+df9407583a1f1be77e7af93afcc134222e720525,2026-10-12T23:22:57+01:00,KamyMirza,Add Pest2Veg logo to gallery header
+c9f22744100d586c98172684b2176078acb28ad8,2026-10-13T20:31:26+01:00,KamyMirza,Add remaining HTML page structures
+33c607dbd5fd6cdd39776b1235b294cfef19d897,2026-10-13T22:02:08+01:00,KamyMirza,Add initial site styling and Pest2Veg branding
+ac7847328f3132d7885fc9c6146fe269dd55f0a4,2026-10-14T11:14:12+01:00,Shafaqat Ali,"Add sourced UK pest dataset: 12 pests, 8 crops, 21 RHS references, and 12 licensed photographs"
+ae2c67565b71ce363473320b598c070c393104c8,2026-10-14T12:25:37+01:00,Shafaqat Ali,"Add master workbook: project map, work plan, scenario tests and matching calculator"
+a586a0c4f91a4724afb41412c9a7e4789841bdf0,2026-10-14T20:54:33+01:00,KamyMirza,Build pest gallery layout and add pest images
+478e8ce80450df3d9b49028183bf1120b962f499,2026-10-14T22:16:31+01:00,KamyMirza,"Build Pest Details, Resources and About pages"
+c15d230a4e8e614c4d7287b0d740b5cb8b071631,2026-10-14T22:54:42+01:00,KamyMirza,Update Identify page for pest matching
+08cc130d7c6a2d9374cb13c93bea8080c6efc813,2026-10-14T23:58:38+01:00,shagi871-glitch,Add files via upload
+3f65585884622eb226ffb743bf0ee1065fbbf0b2,2026-10-14T23:59:27+01:00,shagi871-glitch,Create damage
+e793804e93ec3f7253da9df47a83d84c42f40a48,2026-10-15T00:01:03+01:00,shagi871-glitch,Delete assets/pests/photos/damage
+24edbbe03124bfb8bf57456a9fad51499694cfcd,2026-10-15T00:01:46+01:00,shagi871-glitch,Create damage photos
+292c7252ecf20c7e7823476f5ef5f9c45ac0f144,2026-10-15T00:02:07+01:00,shagi871-glitch,Delete assets/pests/photos/damage photos
+310481cb78a27d65de06e6ec9b6ad5206837c22e,2026-10-15T00:03:21+01:00,shagi871-glitch,Add files via upload
+87ecf00e57bc9dfa965869a528f9ec370dd89058,2026-10-15T00:07:56+01:00,shagi871-glitch,Delete Pest2Veg_UK_12_pests_v3.xlsx
+7eed773fe58ca0dbfa5c5f1fb11cf31f2275c54e,2026-10-15T18:37:57+01:00,emvillab,Merge pull request #2 from emvillab/pest-data-and-photos
+5be607673d4d32ef839bd23fefff801cf744fbe4,2026-10-16T12:35:33+01:00,KamyMirza,Update Pest2Veg HTML structure
+0a0bf03c2361054cf3958c558400a2c23c65300f,2026-10-16T12:43:03+01:00,KamyMirza,Update responsive styling for simplified Pest2Veg layout
+7126b698b7be33a850af1e17dde91b0a33a6b65d,2026-10-16T18:02:13+01:00,iykoniyke,research on cucumber
+1c2ff6db7dfd362e8614948636f4ad2b903c3f25,2026-10-16T19:47:26+01:00,shagi871-glitch,Delete Pest2Veg_master_workbook.xlsx
+b4d40b31faeed48ebb8eea9c4b84eeb1bb90fc5f,2026-10-16T19:49:17+01:00,shagi871-glitch,Add files via upload
+4c07d51db2f3519559b7fa8010a0e2e052c05ff2,2026-10-16T19:57:35+01:00,KamyMirza,Merge pull request #6 from emvillab/Kamran-HTML
+9b2b694e753e3866875650f43e90e2a0361e16a9,2026-10-17T15:11:54+01:00,KamyMirza,Remove obsolete Pest Details and Resources pages
+beb9df62dea631067d17e2b6703222356c1d66ce,2026-10-17T15:32:10+01:00,KamyMirza,Add missing logo and hero image assets
+192ee39c7079aaff587dbb9079293e1fdc946c19,2026-10-17T15:36:06+01:00,KamyMirza,Merge pull request #7 from emvillab/fix/missing-images
+a3502dfe03aa9c73edb98eb86923ba0d26dfbc81,2026-10-17T17:05:29+01:00,Marvis Elvis Aigbe,Bring app.js and data.js from Shaf
+afc82a4b9dd0476e72b97c139d9f87db0df533c7,2026-10-17T18:05:06+01:00,KamyMirza,Fix pest image file paths
+5c234d66c24b3c23b042e4ea20ba9527b9d3cfb7,2026-10-17T18:08:39+01:00,KamyMirza,Merge pull request #8 from emvillab/fix/pest-image-paths
+6278089af5b9c7c6f50f83f21a331deebb858008,2026-10-17T19:07:31+01:00,KamyMirza,Fix identify result image size
+020e020a2ce36f5d073ca02d17bf659479e8fd14,2026-10-17T19:10:39+01:00,KamyMirza,Merge pull request #9 from emvillab/fix/identity-image-size
+b541c9619fa2335683b9a2a94e660a4430e0f3bf,2026-10-17T21:51:19+01:00,KamyMirza,Add cabbage pest research
+86c170c088c720d36870990fe8c2c90cf98ee501,2026-10-17T21:54:25+01:00,KamyMirza,Merge pull request #10 from emvillab/research/kamran-cabbage
+ce97d3c87883998119f54bc440cd18cc88a9aae1,2026-10-17T22:24:20+01:00,KamyMirza,Update cabbage pest content
+577e965d7eb3adcab805ada2aa808f9639465112,2026-10-17T22:27:01+01:00,KamyMirza,Merge pull request #11 from emvillab/feature/cabbage-content
+8233a1c8b9b34dbe303d75e1c46b0a3e60a62b7e,2026-10-18T02:48:42+01:00,emvillab,Merge pull request #5 from emvillab/iykoniyke-research
+96fdcab1902e19c7fdedb3eb475fe3aecba524af,2026-10-18T02:52:36+01:00,Marvis Elvis Aigbe,Add pepper research
+0d7045a7ee395d7decd13f74328597e7ad9dbd04,2026-10-18T15:08:12+01:00,KamyMirza,Add visual crop selector to pest identifier
+afa0832344bd2e9de7881bc35bb9e1a2e1f96243,2026-10-18T15:13:25+01:00,KamyMirza,Merge pull request #12 from emvillab/feature/crop-image-selector
+4947c068287a18e10cbba995a41d66bc7b78ba80,2026-10-18T16:38:50+01:00,KamyMirza,Improve mobile responsive layout and navigation
+9c7645bf907f56d2f5f9cc55bf66e4737bac97b2,2026-10-18T16:41:23+01:00,KamyMirza,Merge pull request #13 from emvillab/feature/mobile-responsive
+379324bb59419f2e5a99b2a9ab1c7aa25892867e,2026-10-18T16:54:22+01:00,KamyMirza,Add back navigation to main pages
+3d5892f2fb6698b62b149a11ef69f70d4245c8b9,2026-10-18T16:59:02+01:00,KamyMirza,Merge pull request #14 from emvillab/feature/mobile-responsive
+28dc533ea28d54ddc89a9085318296e7ef03b22e,2026-10-18T22:16:58+01:00,KamyMirza,Fix crop-specific pest symptoms
+bd4c384792e3c7c206f3b2f923644f64a85b45b0,2026-10-18T22:20:10+01:00,KamyMirza,Merge pull request #15 from emvillab/fix/crop-specific-symptoms
+096102e82a6ead8fe3dae8a525a3f7e5750dea98,2026-10-19T16:15:35+01:00,iykoniyke,Add files via upload
+fb83a5fd5b2fa0b2246e69777566597e017c8d8f,2026-10-20T00:49:37+01:00,Marvis Elvis Aigbe,"Reorganise repo: move research, data and source docs into docs/"
+522958dfd73e8a89ddbc5b624a07dc6b2ea8a9df,2026-10-20T01:12:28+01:00,Marvis Elvis Aigbe,update README
+27dccf0f2fae98602783a8df394f77e72075a562,2026-10-20T22:25:58+01:00,KamyMirza,Update pest data from team research
+1057c17cd7860c7ed85cb53f9cb493d85faace07,2026-10-20T22:28:57+01:00,KamyMirza,Merge pull request #16 from emvillab/feature/final-pest-data
+24806f9e1900508e23eddc63d0e23bcba6b42359,2026-10-20T23:03:49+01:00,KamyMirza,Update README team roles
+85a66e045b3f55fc919ed45a2e853f622efef3b7,2026-10-20T23:04:41+01:00,KamyMirza,Merge pull request #17 from emvillab/docs/update-team-roles
+5ea3571d1985270e789470501145c1aac0f55554,2026-10-21T05:47:20+01:00,Marvis Elvis Aigbe,Add wireframe images

@@ -1,0 +1,24 @@
+{
+  "executedAt": "2026-10-25T13:30:27.908Z",
+  "node": "v24.19.0",
+  "method": "Node built-in test runner; actual scripts in VM with minimal DOM substitute; not browser testing",
+  "tests": 32,
+  "passed": 28,
+  "unexpectedFailures": 0,
+  "knownDefects": 4,
+  "skipped": 0,
+  "runnerExitCode": 0,
+  "releaseGatePassed": false,
+  "sha256": {
+    "app.js": "5e80c8f4c786a04cddd6f41e09c581bdd6ad1ff7c6f093f72781e135c603e632",
+    "data.js": "e2426831c1d8a28e69737463a77ba5b55e39ef1e9fa3fb4cc8cddf4ca263e1c2",
+    "style.css": "c872f6754ba5e6aa7b1582ad2374621b87d0a954646752e261f6ab525ba40be8",
+    "index.html": "68d399edad572b9851697c0564c4a822467e92478af9465bba64736955b7ca32",
+    "gallery.html": "f21db8f126cbcdb707d378b69a38efb20aa69a7f10f5e859a46181b63e94b23e",
+    "identify.html": "5204023713b9bc2a74b04ace570cbed6604e4629c5bc4ade5da38c2c6a0995da",
+    "pest.html": "c22643c7d0ea22d7094f87e90bf8c3111043eb4841b7b377c5dfdfffa9c8b46b",
+    "about.html": "e6b48d91055cf346252227ba7e1f6a661bd19b366746b5f6fc8fc1bcd3402048",
+    "tests/project.test.cjs": "562a78f550c2924296f0de0ed7c5221a84731fbea78be7cfa01d5caf49b1f34c",
+    "tests/run-checks.cjs": "bd32af2f0ac7b50151e9456c6029625d561596855e1661faeb995424d1f9e80a"
+  }
+}

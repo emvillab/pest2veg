@@ -1,0 +1,9 @@
+ID,Risk,Priority,Mitigation or next action,Suggested role (pending acceptance),Current status
+RISK-01,Historical claims presented as current validation,High,Archive notice added; use fresh hashed results,All members,Open: team review needed
+RISK-02,Source or image-credit claims unsupported,High,Verify exact records and permissions; DATA-01/02,Research and asset owner,Open
+RISK-03,Missing Scrum attendance and review evidence,High,Recover original records; record actual future events,Scrum Master and all members,Open
+RISK-04,Known form/accessibility defects affect demonstration,Medium,BUG-01 to BUG-04; regression and manual checks,Frontend and logic,Open
+RISK-05,Browser layout or keyboard defect remains undetected,High,Complete MAN checklist on real devices/browsers,QA,Not run
+RISK-06,Local branch differs from submission branch,High,Verify remote access and reviewed final PR before readiness deadline,Integration,Open
+RISK-07,Exact-match wording and independent symptom/location lists omit or overstate matches,Medium,Review mappings; explain limitations; consider normalising terms only after research,Research and logic,Open
+RISK-08,Deadline or submission-format guidance conflicts,High,Confirm Moodle; plan for earlier GitHub milestone,Scrum Master and each student,Open
