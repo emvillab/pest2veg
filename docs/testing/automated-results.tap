@@ -1,0 +1,529 @@
+TAP version 13
+# Subtest: DATA-01: current scope is six crops and eleven distinct pest IDs
+ok 1 - DATA-01: current scope is six crops and eleven distinct pest IDs
+  ---
+  duration_ms: 2.3155
+  type: 'test'
+  ...
+# Subtest: DATA-02: records contain the fields used by the application
+ok 2 - DATA-02: records contain the fields used by the application
+  ---
+  duration_ms: 1.6474
+  type: 'test'
+  ...
+# Subtest: DATA-03: every pest crop is selectable and every crop has coverage
+ok 3 - DATA-03: every pest crop is selectable and every crop has coverage
+  ---
+  duration_ms: 1.0596
+  type: 'test'
+  ...
+# Subtest: ASSET-01: every pest and selectable crop has a local image
+ok 4 - ASSET-01: every pest and selectable crop has a local image
+  ---
+  duration_ms: 4.4163
+  type: 'test'
+  ...
+# Subtest: LINK-01: local HTML resource links resolve to existing files
+ok 5 - LINK-01: local HTML resource links resolve to existing files
+  ---
+  duration_ms: 10.9202
+  type: 'test'
+  ...
+# Subtest: GALLERY-01: initial gallery renders all pests
+ok 6 - GALLERY-01: initial gallery renders all pests
+  ---
+  duration_ms: 1.3806
+  type: 'test'
+  ...
+# Subtest: GALLERY-02: name search ignores case and surrounding spaces
+ok 7 - GALLERY-02: name search ignores case and surrounding spaces
+  ---
+  duration_ms: 1.1041
+  type: 'test'
+  ...
+# Subtest: GALLERY-03: name and crop filters combine; incompatible query gives zero
+ok 8 - GALLERY-03: name and crop filters combine; incompatible query gives zero
+  ---
+  duration_ms: 1.0563
+  type: 'test'
+  ...
+# Subtest: ID-01: crop tiles include all six crops
+ok 9 - ID-01: crop tiles include all six crops
+  ---
+  duration_ms: 1.1829
+  type: 'test'
+  ...
+# Subtest: ID-02: potato stem-base case returns Cutworms
+ok 10 - ID-02: potato stem-base case returns Cutworms
+  ---
+  duration_ms: 1.424
+  type: 'test'
+  ...
+# Subtest: ID-03: overlapping pepper honeydew case returns both possible pests
+ok 11 - ID-03: overlapping pepper honeydew case returns both possible pests
+  ---
+  duration_ms: 1.3152
+  type: 'test'
+  ...
+# Subtest: ID-04: non-potato crop does not offer potato-tuber damage
+ok 12 - ID-04: non-potato crop does not offer potato-tuber damage
+  ---
+  duration_ms: 0.9402
+  type: 'test'
+  ...
+# Subtest: ID-05: missing inputs are rejected by the handler
+ok 13 - ID-05: missing inputs are rejected by the handler
+  ---
+  duration_ms: 0.906
+  type: 'test'
+  ...
+# Subtest: ID-06: forced unmatched combination is handled without a crash
+ok 14 - ID-06: forced unmatched combination is handled without a crash
+  ---
+  duration_ms: 0.9408
+  type: 'test'
+  ...
+# Subtest: ID-07: changing crop clears earlier results and hides later steps
+ok 15 - ID-07: changing crop clears earlier results and hides later steps
+  ---
+  duration_ms: 0.9915
+  type: 'test'
+  ...
+# Subtest: ID-08: changing damage hides the Find button until a location is selected
+not ok 16 - ID-08: changing damage hides the Find button until a location is selected # TODO BUG-01: updateLocation does not hide the previous Find button
+  ---
+  duration_ms: 1.6019
+  type: 'test'
+  location: 'C:\\Users\\emvillab\\Downloads\\PEST22VEG\\assessment-update\\pest2veg\\tests\\project.test.cjs:163:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    
+    false !== true
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (C:\Users\emvillab\Downloads\PEST22VEG\assessment-update\pest2veg\tests\project.test.cjs:166:26)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1382:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+    Test.postRun (node:internal/test_runner/test:1522:19)
+    Test.run (node:internal/test_runner/test:1447:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:960:7)
+  ...
+# Subtest: DETAIL-aphids: valid ID renders its own record and guidance
+ok 17 - DETAIL-aphids: valid ID renders its own record and guidance
+  ---
+  duration_ms: 1.0576
+  type: 'test'
+  ...
+# Subtest: DETAIL-mealy-cabbage-aphid: valid ID renders its own record and guidance
+ok 18 - DETAIL-mealy-cabbage-aphid: valid ID renders its own record and guidance
+  ---
+  duration_ms: 0.9385
+  type: 'test'
+  ...
+# Subtest: DETAIL-glasshouse-whitefly: valid ID renders its own record and guidance
+ok 19 - DETAIL-glasshouse-whitefly: valid ID renders its own record and guidance
+  ---
+  duration_ms: 1.0318
+  type: 'test'
+  ...
+# Subtest: DETAIL-cabbage-caterpillars: valid ID renders its own record and guidance
+ok 20 - DETAIL-cabbage-caterpillars: valid ID renders its own record and guidance
+  ---
+  duration_ms: 1.2799
+  type: 'test'
+  ...
+# Subtest: DETAIL-cabbage-root-fly: valid ID renders its own record and guidance
+ok 21 - DETAIL-cabbage-root-fly: valid ID renders its own record and guidance
+  ---
+  duration_ms: 0.8665
+  type: 'test'
+  ...
+# Subtest: DETAIL-red-spider-mite: valid ID renders its own record and guidance
+ok 22 - DETAIL-red-spider-mite: valid ID renders its own record and guidance
+  ---
+  duration_ms: 0.8791
+  type: 'test'
+  ...
+# Subtest: DETAIL-thrips: valid ID renders its own record and guidance
+ok 23 - DETAIL-thrips: valid ID renders its own record and guidance
+  ---
+  duration_ms: 0.824
+  type: 'test'
+  ...
+# Subtest: DETAIL-slugs-and-snails: valid ID renders its own record and guidance
+ok 24 - DETAIL-slugs-and-snails: valid ID renders its own record and guidance
+  ---
+  duration_ms: 0.8807
+  type: 'test'
+  ...
+# Subtest: DETAIL-wireworms: valid ID renders its own record and guidance
+ok 25 - DETAIL-wireworms: valid ID renders its own record and guidance
+  ---
+  duration_ms: 0.8367
+  type: 'test'
+  ...
+# Subtest: DETAIL-potato-cyst-nematodes: valid ID renders its own record and guidance
+ok 26 - DETAIL-potato-cyst-nematodes: valid ID renders its own record and guidance
+  ---
+  duration_ms: 0.8534
+  type: 'test'
+  ...
+# Subtest: DETAIL-cutworms: valid ID renders its own record and guidance
+ok 27 - DETAIL-cutworms: valid ID renders its own record and guidance
+  ---
+  duration_ms: 0.8546
+  type: 'test'
+  ...
+# Subtest: DETAIL-invalid: unknown ID produces a useful message
+ok 28 - DETAIL-invalid: unknown ID produces a useful message
+  ---
+  duration_ms: 0.8799
+  type: 'test'
+  ...
+# Subtest: DETAIL-missing: absent ID produces a useful message
+ok 29 - DETAIL-missing: absent ID produces a useful message
+  ---
+  duration_ms: 1.1467
+  type: 'test'
+  ...
+# Subtest: A11Y-01: selected crop exposes its selected state
+not ok 30 - A11Y-01: selected crop exposes its selected state # TODO BUG-02: selected class is visual only; use aria-pressed or radio semantics
+  ---
+  duration_ms: 3.6372
+  type: 'test'
+  location: 'C:\\Users\\emvillab\\Downloads\\PEST22VEG\\assessment-update\\pest2veg\\tests\\project.test.cjs:187:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    The expression evaluated to a falsy value:
+    
+      assert.ok(p.selected.attributes['aria-pressed'] === 'true' || p.selected.attributes['aria-checked'] === 'true')
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: '=='
+  stack: |-
+    TestContext.<anonymous> (C:\Users\emvillab\Downloads\PEST22VEG\assessment-update\pest2veg\tests\project.test.cjs:190:12)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1382:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+    Test.postRun (node:internal/test_runner/test:1522:19)
+    Test.run (node:internal/test_runner/test:1447:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:960:7)
+  ...
+# Subtest: A11Y-02: dynamic result and gallery count regions can announce updates
+not ok 31 - A11Y-02: dynamic result and gallery count regions can announce updates # TODO BUG-03: no live-region or status semantics on result/count containers
+  ---
+  duration_ms: 0.5942
+  type: 'test'
+  location: 'C:\\Users\\emvillab\\Downloads\\PEST22VEG\\assessment-update\\pest2veg\\tests\\project.test.cjs:192:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    The input did not match the regular expression /<[^>]*id="results"[^>]*(?:aria-live=|role="status")/. Input:
+    
+    '<!DOCTYPE html>\r\n' +
+      '<html lang="en">\r\n' +
+      '\r\n' +
+      '<head>\r\n' +
+      '    <meta charset="UTF-8">\r\n' +
+      '    <meta name="viewport" content="width=device-width, initial-scale=1">\r\n' +
+      '\r\n' +
+      '    <title>Identify a Pest | Pest2Veg</title>\r\n' +
+      '\r\n' +
+      '    <link rel="stylesheet" href="style.css">\r\n' +
+      '</head>\r\n' +
+      '\r\n' +
+      '<body>\r\n' +
+      '\r\n' +
+      '    <header>\r\n' +
+      '\r\n' +
+      '        <a href="index.html">\r\n' +
+      '            <img\r\n' +
+      '                class="logo"\r\n' +
+      '                src="assets/pest2veg-logo.svg"\r\n' +
+      '                alt="Pest2Veg">\r\n' +
+      '        </a>\r\n' +
+      '\r\n' +
+      '        <button\r\n' +
+      '            class="menu-toggle"\r\n' +
+      '            type="button"\r\n' +
+      '            aria-label="Open navigation menu"\r\n' +
+      '            aria-expanded="false">\r\n' +
+      '            ☰\r\n' +
+      '        </button>\r\n' +
+      '\r\n' +
+      '        <nav>\r\n' +
+      '            <a href="index.html">Home</a>\r\n' +
+      '            <a href="gallery.html">Pest Gallery</a>\r\n' +
+      '            <a class="active" href="identify.html">Identify a Pest</a>\r\n' +
+      '            <a href="about.html">About</a>\r\n' +
+      '        </nav>\r\n' +
+      '\r\n' +
+      '    </header>\r\n' +
+      '\r\n' +
+      '    <main class="section">\r\n' +
+      '\r\n' +
+      '        <a href="javascript:history.back()" class="back-link">← Back</a>\r\n' +
+      '\r\n' +
+      '        <h1>Identify a Pest</h1>\r\n' +
+      '\r\n' +
+      '        <p>\r\n' +
+      '            Use three simple choices to find possible pests.\r\n' +
+      '        </p>\r\n' +
+      '\r\n' +
+      '        <div class="controls">\r\n' +
+      '\r\n' +
+      '            <div class="form-group">\r\n' +
+      '\r\n' +
+      '                <p>\r\n' +
+      '                    1. Which crop is affected?\r\n' +
+      '                </p>\r\n' +
+      '\r\n' +
+      '                <div\r\n' +
+      '                    id="crop-options"\r\n' +
+      '                    class="crop-options">\r\n' +
+      '                </div>\r\n' +
+      '\r\n' +
+      '                <input\r\n' +
+      '                    type="hidden"\r\n' +
+      '                    id="crop"\r\n' +
+      '                    value="">\r\n' +
+      '\r\n' +
+      '            </div>\r\n' +
+      '\r\n' +
+      '            <div\r\n' +
+      '                class="form-group"\r\n' +
+      '                id="damage-group"\r\n' +
+      '                hidden>\r\n' +
+      '\r\n' +
+      '                <label for="damage">\r\n' +
+      '                    2. What damage can you see?\r\n' +
+      '                </label>\r\n' +
+      '\r\n' +
+      '                <select id="damage">\r\n' +
+      '                    <option>Choose a crop first</option>\r\n' +
+      '                </select>\r\n' +
+      '\r\n' +
+      '            </div>\r\n' +
+      '\r\n' +
+      '            <div\r\n' +
+      '                class="form-group"\r\n' +
+      '                id="location-group"\r\n' +
+      '                hidden>\r\n' +
+      '\r\n' +
+      '                <label for="location">\r\n' +
+      '                    3. Where is the damage?\r\n' +
+      '                </label>\r\n' +
+      '\r\n' +
+      '                <select id="location">\r\n' +
+      '                    <option>Choose a crop first</option>\r\n' +
+      '                </select>\r\n' +
+      '\r\n' +
+      '            </div>\r\n' +
+      '\r\n' +
+      '            <button\r\n' +
+      '                class="button"\r\n' +
+      '                id="find-pest"\r\n' +
+      '                type="button" hidden>\r\n' +
+      '                Find Possible Pest\r\n' +
+      '            </button>\r\n' +
+      '\r\n' +
+      '        </div>\r\n' +
+      '\r\n' +
+      '        <div id="results"></div>\r\n' +
+      '\r\n' +
+      '    </main>\r\n' +
+      '\r\n' +
+      '    <footer>\r\n' +
+      '        © 2026 Pest2Veg · Supporting sustainable crop awareness and\r\n' +
+      '        UN Sustainable Development Goal 2.\r\n' +
+      '    </footer>\r\n' +
+      '\r\n' +
+      '    <script src="data.js"></script>\r\n' +
+      '    <script src="app.js"></script>\r\n' +
+      '\r\n' +
+      '</body>\r\n' +
+      '\r\n' +
+      '</html>'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  actual: |-
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <title>Identify a Pest | Pest2Veg</title>
+    
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+    
+        <header>
+    
+            <a href="index.html">
+                <img
+                    class="logo"
+                    src="assets/pest2veg-logo.svg"
+                    alt="Pest2Veg">
+            </a>
+    
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false">
+                ☰
+            </button>
+    
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="gallery.html">Pest Gallery</a>
+                <a class="active" href="identify.html">Identify a Pest</a>
+                <a href="about.html">About</a>
+            </nav>
+    
+        </header>
+    
+        <main class="section">
+    
+            <a href="javascript:history.back()" class="back-link">← Back</a>
+    
+            <h1>Identify a Pest</h1>
+    
+            <p>
+                Use three simple choices to find possible pests.
+            </p>
+    
+            <div class="controls">
+    
+                <div class="form-group">
+    
+                    <p>
+                        1. Which crop is affected?
+                    </p>
+    
+                    <div
+                        id="crop-options"
+                        class="crop-options">
+                    </div>
+    
+                    <input
+                        type="hidden"
+                        id="crop"
+                        value="">
+    
+                </div>
+    
+                <div
+                    class="form-group"
+                    id="damage-group"
+                    hidden>
+    
+                    <label for="damage">
+                        2. What damage can you see?
+                    </label>
+    
+                    <select id="damage">
+                        <option>Choose a crop first</option>
+                    </select>
+    
+                </div>
+    
+                <div
+                    class="form-group"
+                    id="location-group"
+                    hidden>
+    
+                    <label for="location">
+                        3. Where is the damage?
+                    </label>
+    
+                    <select id="location">
+                        <option>Choose a crop first</option>
+                    </select>
+    
+                </div>
+    
+                <button
+                    class="button"
+                    id="find-pest"
+                    type="button" hidden>
+                    Find Possible Pest
+                </button>
+    
+            </div>
+    
+            <div id="results"></div>
+    
+        </main>
+    
+        <footer>
+            © 2026 Pest2Veg · Supporting sustainable crop awareness and
+            UN Sustainable Development Goal 2.
+        </footer>
+    
+        <script src="data.js"></script>
+        <script src="app.js"></script>
+    
+    </body>
+    
+    </html>
+  operator: 'match'
+  stack: |-
+    TestContext.<anonymous> (C:\Users\emvillab\Downloads\PEST22VEG\assessment-update\pest2veg\tests\project.test.cjs:194:12)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1382:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+    Test.postRun (node:internal/test_runner/test:1522:19)
+    Test.run (node:internal/test_runner/test:1447:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:960:7)
+  ...
+# Subtest: A11Y-03: button text has a contrast ratio of at least 4.5
+not ok 32 - A11Y-03: button text has a contrast ratio of at least 4.5 # TODO BUG-04: white on \#76b947 is approximately 2.39:1
+  ---
+  duration_ms: 0.8658
+  type: 'test'
+  location: 'C:\\Users\\emvillab\\Downloads\\PEST22VEG\\assessment-update\\pest2veg\\tests\\project.test.cjs:197:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    The expression evaluated to a falsy value:
+    
+      assert.ok((values[0]+.05)/(values[1]+.05) >= 4.5)
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: '=='
+  stack: |-
+    TestContext.<anonymous> (C:\Users\emvillab\Downloads\PEST22VEG\assessment-update\pest2veg\tests\project.test.cjs:206:12)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1382:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+    Test.postRun (node:internal/test_runner/test:1522:19)
+    Test.run (node:internal/test_runner/test:1447:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:960:7)
+  ...
+1..32
+# tests 32
+# suites 0
+# pass 28
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 4
+# duration_ms 143.2024

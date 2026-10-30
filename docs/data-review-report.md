@@ -1,3 +1,11 @@
+# Historical work record status
+
+Archived-context notice added 25 October 2026. The original record below is preserved as received. It describes a different eight-crop/twelve-pest architecture and claims 30 passing tests. Those tests, source layout, confidence labels and page counts have not been reproduced in the current project. These are historical claims, not current validation or independently confirmed meeting evidence.
+
+Use [current scope](current-scope.md), [executed tests](testing/test-results.md) and [evidence index](evidence-index.md) for the present implementation. The original author attribution does not imply authorship of this notice.
+
+---
+
 # Work Record — research, findings and changes
 
 **Author:** Shafaqat Ali

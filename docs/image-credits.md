@@ -1,3 +1,13 @@
+# Image credit verification status
+
+Status notice added 25 October 2026. The existing working record below is preserved for source tracing; its permissions and species claims have not been independently rechecked in this audit. There are eleven runtime pests, not twelve. No photographer credit or licence link is currently rendered by the application; its Research source field shows only a textual information-source label.
+
+Open actions: reconcile the cabbage-root-fly licence (table says CC BY 4.0; full citation says CC BY-SA 3.0), verify exact permission statements for the UMass and Queensland images, check the actual deployed files against their source pages, and add appropriate visible author/source/licence/change credits after verification. Generic descriptions such as 'Government, credit expected' are unresolved notes, not verified licence terms. Crop photographs also need source and permission records. The descriptions of on-page attribution below are not accurate for this implementation.
+
+Do not claim this audit proves image reuse permission. Track completion as DATA-02 in the backlog.
+
+---
+
 # Image credits
 
 Owner: Ike (assets), with Marvis maintaining this file.

@@ -1,0 +1,15 @@
+ID,Work item,Suggested responsible role (not accepted assignment),Status at 25 Oct,Acceptance evidence,Reference
+BASE-01,Browse/search/filter pests,Frontend,Implemented; validation pending,GALLERY-01/02/03 and MAN-02 recorded,app.js buildGallery
+BASE-02,Guided possible matching,Logic,Implemented; validation pending,ID checks plus MAN-03/04 recorded; BUG-01 fixed,app.js buildIdentifier
+BASE-03,Pest detail guidance,Research and logic,Implemented; sourcing validation pending,All detail checks; precise sources and permissions reviewed,app.js buildPestPage
+BUG-01,Reset Find button when damage changes,Logic,Open,ID-08 passes without TODO; manual reset case passes,tests/project.test.cjs
+BUG-02,Expose crop selected state to assistive technology,Frontend and UI/UX,Open,A11Y-01 passes without TODO; MAN-06/07 recorded,tests/project.test.cjs
+BUG-03,Announce results and gallery count updates,Frontend,Open,A11Y-02 passes without TODO; MAN-07 recorded,identify.html; gallery.html
+BUG-04,Improve small button-text contrast,Frontend and UI/UX,Open,A11Y-03 passes without TODO; visual review recorded,style.css
+DATA-01,Validate source mappings and workbook against runtime data,Research and logic,Open,Eleven records checked; precise supporting URLs and corrections logged,data.js; docs/data/
+DATA-02,Verify crop/pest image rights and visible attribution,Research and asset owner,Open,Each used file traced; conflicts resolved; required credits visible and reviewed,docs/image-credits.md
+DOC-01,Reconcile UML/DFD with current boundary and required location,UI/UX and logic,Open,Readable exports; supported flows; administrator scope explained,Supplied diagrams outside repository
+QA-01,Complete browser and volunteer usability validation,QA and all members,Not run,manual-checklist.csv completed with real outcomes and evidence,docs/testing/manual-checklist.csv
+SCRUM-01,Agree completion priorities and recover existing records,Scrum Master and team,Proposed,Actual team decision; owners accept work; original evidence linked,docs/scrum/
+REL-01,Review GitHub submission snapshot,Integration and team,Proposed,All intended files pushed via reviewed PR; remote version checked; release checks repeated,GitHub access currently unavailable
+VIVA-01,Prepare and rehearse live presentation,All members,Proposed,15-18 slides; timed 15 min demo and 5 min Q&A; actual rehearsal notes,Assessment brief
